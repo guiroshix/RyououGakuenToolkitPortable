@@ -1037,7 +1037,7 @@ rgt_rgo_script_elements_to_script
 				RGT_RESIZE_ARRAY
 				(
 					arena, 
-					max(jump.id + 1, script.jumps.length * 2), 
+					RGT_MAX(jump.id + 1, script.jumps.length * 2), 
 					&script.jumps
 				);
 			}
