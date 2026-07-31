@@ -21,8 +21,18 @@ jobs:
       - name: Compile
         run: ./build.sh
 
+      - name: Check output
+        run: |
+          ls -la
+
       - name: Upload executables
         uses: actions/upload-artifact@v4
         with:
           name: RyououGakuenToolkit-Linux
-          path: portable/
+          path: |
+            RGT*
+            RGO*
+            CPK*
+            Script*
+            Image*
+            Auto*
