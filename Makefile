@@ -43,6 +43,7 @@ RGT_RGO_Patch_Builder:
 	apps/RGT_RGO_Patch_Builder/src/header_data_implementation.c \
 	apps/RGT_RGO_Patch_Builder/src/script_0_implementation.c \
 	apps/RGT_RGO_Patch_Builder/src/script_1_implementation.c \
+	rgt_platform_linux.c \
 	$(COMMON) \
 	-Iapps/RGT_RGO_Patch_Builder/hdr \
 	-o $@ \
