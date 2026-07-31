@@ -29,10 +29,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RyououGakuenToolkit-Linux
-          path: |
-            RGT*
-            RGO*
-            CPK*
-            Script*
-            Image*
-            Auto*
+          path: portable/
