@@ -6,5 +6,4 @@ make clean
 make
 
 mkdir -p portable
-
-find apps -type f -executable -exec cp {} portable/ \;
+find . -maxdepth 1 -type f -executable -exec cp {} portable/ \;
