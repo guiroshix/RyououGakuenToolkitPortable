@@ -7,4 +7,4 @@ make
 
 mkdir -p portable
 
-cp RGT* RGO* CPK* Script* Image* Auto* portable/
+cp RGT* RGO* CPK* Script* Image* AutoTranslate* portable/
