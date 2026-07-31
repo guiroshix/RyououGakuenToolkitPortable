@@ -21,25 +21,7 @@ typedef struct _script_replace_info
 const image_replace_info g_union_images_to_replace[] =
 {
 	/* Story CGs */
-	{ "resources/i
-const image_replace_info g_union_images_to_replace[] =
-{
-	/* Story CGs */
-	{ "resources\\images\\873_0.png", 873, 0 },
-	{ "resources\\images\\984_0.png", 984, 0 },
-	{ "resources\\images\\1000_0.png", 1000, 0 },
-	{ "resources\\images\\1028_0.png", 1028, 0 },
-	{ "resources\\images\\1029_0.png", 1029, 0 },
-	{ "resources\\images\\1044_0.png", 104
-const image_replace_info g_union_images_to_replace[] =
-{
-	/* Story CGs */
-	{ "resources\\images\\873_0.png", 873, 0 },
-	{ "resources\\images\\984_0.png", 984, 0 },
-	{ "resources\\images\\1000_0.png", 1000, 0 },
-	{ "resources\\images\\1028_0.png", 1028, 0 },
-	{ "resources\\images\\1029_0.png", 1029, 0 },
-	{ "resources\\images\\1044_0.png", 104mages/873_0.png", 873, 0 },
+	{ "resources/images/873_0.png", 873, 0 },
 	{ "resources/images/984_0.png", 984, 0 },
 	{ "resources/images/1000_0.png", 1000, 0 },
 	{ "resources/images/1028_0.png", 1028, 0 },
