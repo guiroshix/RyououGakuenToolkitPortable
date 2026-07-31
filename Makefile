@@ -34,7 +34,6 @@ all: \
 	NIMImageExtractor \
 	ImageColorReducer \
 	RGOFontGenerator \
-	RGOTextPreview \
 	ScriptMerger
 
 
