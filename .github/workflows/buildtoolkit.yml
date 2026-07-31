@@ -1,0 +1,25 @@
+name: Build Toolkit
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependences
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential libpng-dev zlib1g-dev
+
+      - name: Permissions
+        run: chmod +x build.sh
+
+      - name: Compile
+        run: ./build.sh
