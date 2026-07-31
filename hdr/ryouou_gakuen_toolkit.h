@@ -19,4 +19,8 @@
 #include "rgt_string.h"
 #include "rgt_utf8.h"
 
+#ifndef RGT_MAX
+#define RGT_MAX(a,b) ((a) > (b) ? (a) : (b))
+#endif
+
 #endif
