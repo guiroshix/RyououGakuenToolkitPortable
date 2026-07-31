@@ -737,7 +737,7 @@ rgt_result
 patch_scripts(rgt_u8_array eboot)
 {
 	const int heap_size_high_addr = 0x15B54;
-	const heap_size_low_addr = 0x15B58;
+	const int heap_size_low_addr = 0x15B58;
 
 	rgt_result result = RGT_SUCCESS;
 	rgt_arena arena = {0};
