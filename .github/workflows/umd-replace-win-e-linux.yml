@@ -23,5 +23,5 @@ jobs:
       with:
         name: umd-replace-binaries
         path: |
-          umd-replace-linux
-          umd-replace.exe
+          UMD-replace-linux
+          UMD-replace.exe
