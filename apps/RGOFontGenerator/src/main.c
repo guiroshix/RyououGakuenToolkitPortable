@@ -1,10 +1,10 @@
 #include "ryouou_gakuen_toolkit.h"
 
-#define BASE_GLYPHS_STRINGS_PATH "resources/english_base_glyphs_strings.txt"
-#define BASE_GLYPHS_IMAGE_PATH "resources/english_base_glyphs.png"
-#define MULTI_GLYPHS_STRINGS_PATH "resources/english_multi_glyph_strings.txt"
-#define OUT_PATH_FONT "results/english_lt.bin"
-#define OUT_PATH_COMPOSITE "results/english_lt.png"
+#define BASE_GLYPHS_STRINGS_PATH "resources/RGOFontGenerator/english_base_glyphs_strings.txt"
+#define BASE_GLYPHS_IMAGE_PATH "resources/RGOFontGenerator/english_base_glyphs.png"
+#define MULTI_GLYPHS_STRINGS_PATH "resources/RGOFontGenerator/english_multi_glyph_strings.txt"
+#define OUT_PATH_FONT "results/RGOFontGenerator/english_lt.bin"
+#define OUT_PATH_COMPOSITE "results/RGOFontGenerator/english_lt.png"
 
 #define GLYPH_SIZE 92
 #define GLYPH_WIDTH_OFFSET 90
