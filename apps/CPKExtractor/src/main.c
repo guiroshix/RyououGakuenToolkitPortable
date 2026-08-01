@@ -19,14 +19,14 @@ main(void)
 	for (u64 i = 0; i < cpk.data_l_files.length; ++i)
 	{
 		char out_path[1024] = {0};
-		sprintf(out_path, "results/%s/%hu", CPK_NAME, cpk.data_l_files.elems[i].id);
+		sprintf(out_path, "results/CPKExtractor/%s/%hu", CPK_NAME, cpk.data_l_files.elems[i].id);
 		RGT_CALL(rgt_save_file(cpk.data_l_files.elems[i].data, out_path));
 		printf("%s\n", out_path);
 	}
 	for (u64 i = 0; i < cpk.data_h_files.length; ++i)
 	{
 		char out_path[1024] = {0};
-		sprintf(out_path, "results/%s/%hu", CPK_NAME, cpk.data_h_files.elems[i].id);
+		sprintf(out_path, "results/CPKExtractor/%s/%hu", CPK_NAME, cpk.data_h_files.elems[i].id);
 		RGT_CALL(rgt_save_file(cpk.data_h_files.elems[i].data, out_path));
 		printf("%s\n", out_path);
 	}
