@@ -1,12 +1,12 @@
 #include "ryouou_gakuen_toolkit.h"
 #include "rgo_pr_image_info.h"
 
-#define UNION_PATH "assets\\union.cpk"
-#define PR_PATH "assets\\pr.bin"
-#define PNG_PATH "assets\\1423_0.png"
+#define UNION_PATH "assets/union.cpk"
+#define PR_PATH "assets/pr.bin"
+#define PNG_PATH "assets/1423_0.png"
 #define IMAGE_ID 1423
 #define IMAGE_INDEX 0
-#define OUT_PATH "results\\1423_0.png"
+#define OUT_PATH "results/ImageColorReducer/1423_0.png"
 #define IS_UNION true
 
 int
