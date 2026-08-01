@@ -1,7 +1,7 @@
 #include "ryouou_gakuen_toolkit.h"
 
 #define FONT_FILE_PATH "assets/lt_rgo.bin"
-#define OUT_PATH_COMPOSITE "results/lt_rgo.png"
+#define OUT_PATH_COMPOSITE "results/RGOFontExtractor/lt_rgo.png"
 
 int
 main(void)
