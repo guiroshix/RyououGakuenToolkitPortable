@@ -21,266 +21,266 @@ typedef struct _script_replace_info
 const image_replace_info g_union_images_to_replace[] =
 {
 	/* Story CGs */
-	{ "resources/images/873_0.png", 873, 0 },
-	{ "resources/images/984_0.png", 984, 0 },
-	{ "resources/images/1000_0.png", 1000, 0 },
-	{ "resources/images/1028_0.png", 1028, 0 },
-	{ "resources/images/1029_0.png", 1029, 0 },
-	{ "resources/images/1044_0.png", 1044, 0 },
-	{ "resources/images/1045_0.png", 1045, 0 },
-	{ "resources/images/1048_0.png", 1048, 0 },
-	{ "resources/images/1049_0.png", 1049, 0 },
-	{ "resources/images/1050_0.png", 1050, 0 },
-	{ "resources/images/1051_0.png", 1051, 0 },
-	{ "resources/images/1052_0.png", 1052, 0 },
-	{ "resources/images/1053_0.png", 1053, 0 },
-	{ "resources/images/1054_0.png", 1054, 0 },
-	{ "resources/images/1055_0.png", 1055, 0 },
-	{ "resources/images/1056_0.png", 1056, 0 },
-	{ "resources/images/1057_0.png", 1057, 0 },
-	{ "resources/images/1058_0.png", 1058, 0 },
-	{ "resources/images/1059_0.png", 1059, 0 },
-	{ "resources/images/1063_0.png", 1063, 0 },
-	{ "resources/images/1068_0.png", 1068, 0 },
-	{ "resources/images/1070_0.png", 1070, 0 },
-	{ "resources/images/1071_0.png", 1071, 0 },
-	{ "resources/images/1072_0.png", 1072, 0 },
-	{ "resources/images/1073_0.png", 1073, 0 },
-	{ "resources/images/1074_0.png", 1074, 0 },
-	{ "resources/images/1075_0.png", 1075, 0 },
-	{ "resources/images/1084_0.png", 1084, 0 },
-	{ "resources/images/1085_0.png", 1085, 0 },
-	{ "resources/images/1092_0.png", 1092, 0 },
-	{ "resources/images/1094_0.png", 1094, 0 },
-	{ "resources/images/1095_0.png", 1095, 0 },
-	{ "resources/images/1096_0.png", 1096, 0 },
-	{ "resources/images/1097_0.png", 1097, 0 },
-	{ "resources/images/1098_0.png", 1098, 0 },
-	{ "resources/images/1099_0.png", 1099, 0 },
-	{ "resources/images/1106_0.png", 1106, 0 },
-	{ "resources/images/1107_0.png", 1107, 0 },
-	{ "resources/images/1108_0.png", 1108, 0 },
-	{ "resources/images/1111_0.png", 1111, 0 },
-	{ "resources/images/1115_0.png", 1115, 0 },
-	{ "resources/images/1116_0.png", 1116, 0 },
-	{ "resources/images/1117_0.png", 1117, 0 },
-	{ "resources/images/1118_0.png", 1118, 0 },
-	{ "resources/images/1119_0.png", 1119, 0 },
-	{ "resources/images/1120_0.png", 1120, 0 },
-	{ "resources/images/1121_0.png", 1121, 0 },
-	{ "resources/images/1122_0.png", 1122, 0 },
-	{ "resources/images/1124_0.png", 1124, 0 },
-	{ "resources/images/1135_0.png", 1135, 0 },
-	{ "resources/images/1136_0.png", 1136, 0 },
-	{ "resources/images/1138_0.png", 1138, 0 },
-	{ "resources/images/1143_0.png", 1143, 0 },
-	{ "resources/images/1145_0.png", 1145, 0 },
-	{ "resources/images/1146_0.png", 1146, 0 },
-	{ "resources/images/1147_0.png", 1147, 0 },
-	{ "resources/images/1149_0.png", 1149, 0 },
-	{ "resources/images/1150_0.png", 1150, 0 },
-	{ "resources/images/1151_0.png", 1151, 0 },
-	{ "resources/images/1152_0.png", 1152, 0 },
-	{ "resources/images/1153_0.png", 1153, 0 },
-	{ "resources/images/1154_0.png", 1154, 0 },
-	{ "resources/images/1155_0.png", 1155, 0 },
-	{ "resources/images/1156_0.png", 1156, 0 },
-	{ "resources/images/1157_0.png", 1157, 0 },
-	{ "resources/images/1158_0.png", 1158, 0 },
-	{ "resources/images/1159_0.png", 1159, 0 },
-	{ "resources/images/1160_0.png", 1160, 0 },
-	{ "resources/images/1161_0.png", 1161, 0 },
-	{ "resources/images/1162_0.png", 1162, 0 },
-	{ "resources/images/1163_0.png", 1163, 0 },
-	{ "resources/images/1165_0.png", 1165, 0 },
-	{ "resources/images/1166_0.png", 1166, 0 },
-	{ "resources/images/1167_0.png", 1167, 0 },
-	{ "resources/images/1168_0.png", 1168, 0 },
-	{ "resources/images/1169_0.png", 1169, 0 },
-	{ "resources/images/1170_0.png", 1170, 0 },
-	{ "resources/images/1171_0.png", 1171, 0 },
-	{ "resources/images/1175_0.png", 1175, 0 },
-	{ "resources/images/1176_0.png", 1176, 0 },
-	{ "resources/images/1180_0.png", 1180, 0 },
-	{ "resources/images/1193_0.png", 1193, 0 },
-	{ "resources/images/1199_0.png", 1199, 0 },
-	{ "resources/images/1200_0.png", 1200, 0 },
-	{ "resources/images/1201_0.png", 1201, 0 },
-	{ "resources/images/1204_0.png", 1204, 0 },
-	{ "resources/images/1206_0.png", 1206, 0 },
-	{ "resources/images/1212_0.png", 1212, 0 },
-	{ "resources/images/1213_0.png", 1213, 0 },
-	{ "resources/images/1214_0.png", 1214, 0 },
-	{ "resources/images/1223_0.png", 1223, 0 },
-	{ "resources/images/1225_0.png", 1225, 0 },
-	{ "resources/images/1226_0.png", 1226, 0 },
-	{ "resources/images/1292_0.png", 1292, 0 },
-	{ "resources/images/1296_0.png", 1296, 0 },
-	{ "resources/images/1298_0.png", 1298, 0 },
-	{ "resources/images/1299_0.png", 1299, 0 },
-	{ "resources/images/1300_0.png", 1300, 0 },
-	{ "resources/images/1301_0.png", 1301, 0 },
-	{ "resources/images/1304_0.png", 1304, 0 },
-	{ "resources/images/1316_0.png", 1316, 0 },
-	{ "resources/images/1330_0.png", 1330, 0 },
-	{ "resources/images/1334_0.png", 1334, 0 },
-	{ "resources/images/1337_0.png", 1337, 0 },
-	{ "resources/images/1343_0.png", 1343, 0 },
-	{ "resources/images/1344_0.png", 1344, 0 },
-	{ "resources/images/1360_0.png", 1360, 0 },
-	{ "resources/images/1361_0.png", 1361, 0 },
-	{ "resources/images/1415_0.png", 1415, 0 },
-	{ "resources/images/1416_0.png", 1416, 0 },
-	{ "resources/images/1418_0.png", 1418, 0 },
-	{ "resources/images/1419_0.png", 1419, 0 },
-	{ "resources/images/1420_0.png", 1420, 0 },
-	{ "resources/images/1421_0.png", 1421, 0 },
-	{ "resources/images/1422_0.png", 1422, 0 },
-	{ "resources/images/1423_0.png", 1423, 0 },
-	{ "resources/images/1424_0.png", 1424, 0 },
-	{ "resources/images/1425_0.png", 1425, 0 },
-	{ "resources/images/1426_0.png", 1426, 0 },
-	{ "resources/images/1427_0.png", 1427, 0 },
-	{ "resources/images/1428_0.png", 1428, 0 },
-	{ "resources/images/1429_0.png", 1429, 0 },
-	{ "resources/images/1430_0.png", 1430, 0 },
-	{ "resources/images/1439_0.png", 1439, 0 },
-	{ "resources/images/1440_0.png", 1440, 0 },
-	{ "resources/images/1441_0.png", 1441, 0 },
-	{ "resources/images/1445_0.png", 1445, 0 },
-	{ "resources/images/1446_0.png", 1446, 0 },
-	{ "resources/images/1436_0.png", 1436, 0 },
-	{ "resources/images/1454_0.png", 1454, 0 },
-	{ "resources/images/1455_0.png", 1455, 0 },
-	{ "resources/images/1456_0.png", 1456, 0 },
-	{ "resources/images/1457_0.png", 1457, 0 },
-	{ "resources/images/1461_0.png", 1461, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/873_0.png", 873, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/984_0.png", 984, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1000_0.png", 1000, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1028_0.png", 1028, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1029_0.png", 1029, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1044_0.png", 1044, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1045_0.png", 1045, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1048_0.png", 1048, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1049_0.png", 1049, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1050_0.png", 1050, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1051_0.png", 1051, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1052_0.png", 1052, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1053_0.png", 1053, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1054_0.png", 1054, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1055_0.png", 1055, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1056_0.png", 1056, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1057_0.png", 1057, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1058_0.png", 1058, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1059_0.png", 1059, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1063_0.png", 1063, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1068_0.png", 1068, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1070_0.png", 1070, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1071_0.png", 1071, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1072_0.png", 1072, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1073_0.png", 1073, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1074_0.png", 1074, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1075_0.png", 1075, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1084_0.png", 1084, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1085_0.png", 1085, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1092_0.png", 1092, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1094_0.png", 1094, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1095_0.png", 1095, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1096_0.png", 1096, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1097_0.png", 1097, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1098_0.png", 1098, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1099_0.png", 1099, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1106_0.png", 1106, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1107_0.png", 1107, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1108_0.png", 1108, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1111_0.png", 1111, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1115_0.png", 1115, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1116_0.png", 1116, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1117_0.png", 1117, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1118_0.png", 1118, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1119_0.png", 1119, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1120_0.png", 1120, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1121_0.png", 1121, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1122_0.png", 1122, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1124_0.png", 1124, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1135_0.png", 1135, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1136_0.png", 1136, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1138_0.png", 1138, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1143_0.png", 1143, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1145_0.png", 1145, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1146_0.png", 1146, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1147_0.png", 1147, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1149_0.png", 1149, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1150_0.png", 1150, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1151_0.png", 1151, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1152_0.png", 1152, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1153_0.png", 1153, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1154_0.png", 1154, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1155_0.png", 1155, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1156_0.png", 1156, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1157_0.png", 1157, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1158_0.png", 1158, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1159_0.png", 1159, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1160_0.png", 1160, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1161_0.png", 1161, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1162_0.png", 1162, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1163_0.png", 1163, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1165_0.png", 1165, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1166_0.png", 1166, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1167_0.png", 1167, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1168_0.png", 1168, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1169_0.png", 1169, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1170_0.png", 1170, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1171_0.png", 1171, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1175_0.png", 1175, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1176_0.png", 1176, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1180_0.png", 1180, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1193_0.png", 1193, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1199_0.png", 1199, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1200_0.png", 1200, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1201_0.png", 1201, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1204_0.png", 1204, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1206_0.png", 1206, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1212_0.png", 1212, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1213_0.png", 1213, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1214_0.png", 1214, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1223_0.png", 1223, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1225_0.png", 1225, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1226_0.png", 1226, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1292_0.png", 1292, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1296_0.png", 1296, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1298_0.png", 1298, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1299_0.png", 1299, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1300_0.png", 1300, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1301_0.png", 1301, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1304_0.png", 1304, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1316_0.png", 1316, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1330_0.png", 1330, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1334_0.png", 1334, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1337_0.png", 1337, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1343_0.png", 1343, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1344_0.png", 1344, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1360_0.png", 1360, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1361_0.png", 1361, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1415_0.png", 1415, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1416_0.png", 1416, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1418_0.png", 1418, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1419_0.png", 1419, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1420_0.png", 1420, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1421_0.png", 1421, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1422_0.png", 1422, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1423_0.png", 1423, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1424_0.png", 1424, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1425_0.png", 1425, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1426_0.png", 1426, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1427_0.png", 1427, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1428_0.png", 1428, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1429_0.png", 1429, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1430_0.png", 1430, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1439_0.png", 1439, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1440_0.png", 1440, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1441_0.png", 1441, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1445_0.png", 1445, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1446_0.png", 1446, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1436_0.png", 1436, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1454_0.png", 1454, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1455_0.png", 1455, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1456_0.png", 1456, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1457_0.png", 1457, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1461_0.png", 1461, 0 },
 
 	/* Trading Cards */
-	{ "resources/images/1477_0.png", 1477, 0 },
-	{ "resources/images/1478_0.png", 1478, 0 },
-	{ "resources/images/1479_0.png", 1479, 0 },
-	{ "resources/images/1480_0.png", 1480, 0 },
-	{ "resources/images/1481_0.png", 1481, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1477_0.png", 1477, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1478_0.png", 1478, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1479_0.png", 1479, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1480_0.png", 1480, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1481_0.png", 1481, 0 },
 
-	{ "resources/images/1482_0.png", 1482, 0 },
-	{ "resources/images/1483_0.png", 1483, 0 },
-	{ "resources/images/1484_0.png", 1484, 0 },
-	{ "resources/images/1485_0.png", 1485, 0 },
-	{ "resources/images/1486_0.png", 1486, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1482_0.png", 1482, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1483_0.png", 1483, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1484_0.png", 1484, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1485_0.png", 1485, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1486_0.png", 1486, 0 },
 
-	{ "resources/images/1487_0.png", 1487, 0 },
-	{ "resources/images/1488_0.png", 1488, 0 },
-	{ "resources/images/1489_0.png", 1489, 0 },
-	{ "resources/images/1490_0.png", 1490, 0 },
-	{ "resources/images/1491_0.png", 1491, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1487_0.png", 1487, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1488_0.png", 1488, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1489_0.png", 1489, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1490_0.png", 1490, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1491_0.png", 1491, 0 },
 
-	{ "resources/images/1492_0.png", 1492, 0 },
-	{ "resources/images/1493_0.png", 1493, 0 },
-	{ "resources/images/1494_0.png", 1494, 0 },
-	{ "resources/images/1495_0.png", 1495, 0 },
-	{ "resources/images/1496_0.png", 1496, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1492_0.png", 1492, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1493_0.png", 1493, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1494_0.png", 1494, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1495_0.png", 1495, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1496_0.png", 1496, 0 },
 
-	{ "resources/images/1497_0.png", 1497, 0 },
-	{ "resources/images/1498_0.png", 1498, 0 },
-	{ "resources/images/1499_0.png", 1499, 0 },
-	{ "resources/images/1500_0.png", 1500, 0 },
-	{ "resources/images/1501_0.png", 1501, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1497_0.png", 1497, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1498_0.png", 1498, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1499_0.png", 1499, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1500_0.png", 1500, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1501_0.png", 1501, 0 },
 
-	{ "resources/images/1502_0.png", 1502, 0 },
-	{ "resources/images/1503_0.png", 1503, 0 },
-	{ "resources/images/1504_0.png", 1504, 0 },
-	{ "resources/images/1505_0.png", 1505, 0 },
-	{ "resources/images/1506_0.png", 1506, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1502_0.png", 1502, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1503_0.png", 1503, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1504_0.png", 1504, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1505_0.png", 1505, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1506_0.png", 1506, 0 },
 
-	{ "resources/images/1507_0.png", 1507, 0 },
-	{ "resources/images/1508_0.png", 1508, 0 },
-	{ "resources/images/1509_0.png", 1509, 0 },
-	{ "resources/images/1510_0.png", 1510, 0 },
-	{ "resources/images/1511_0.png", 1511, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1507_0.png", 1507, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1508_0.png", 1508, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1509_0.png", 1509, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1510_0.png", 1510, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1511_0.png", 1511, 0 },
 
-	{ "resources/images/1512_0.png", 1512, 0 },
-	{ "resources/images/1513_0.png", 1513, 0 },
-	{ "resources/images/1514_0.png", 1514, 0 },
-	{ "resources/images/1515_0.png", 1515, 0 },
-	{ "resources/images/1516_0.png", 1516, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1512_0.png", 1512, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1513_0.png", 1513, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1514_0.png", 1514, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1515_0.png", 1515, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1516_0.png", 1516, 0 },
 
-	{ "resources/images/1517_0.png", 1517, 0 },
-	{ "resources/images/1518_0.png", 1518, 0 },
-	{ "resources/images/1519_0.png", 1519, 0 },
-	{ "resources/images/1520_0.png", 1520, 0 },
-	{ "resources/images/1521_0.png", 1521, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1517_0.png", 1517, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1518_0.png", 1518, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1519_0.png", 1519, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1520_0.png", 1520, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1521_0.png", 1521, 0 },
 
-	{ "resources/images/1522_0.png", 1522, 0 },
-	{ "resources/images/1523_0.png", 1523, 0 },
-	{ "resources/images/1524_0.png", 1524, 0 },
-	{ "resources/images/1525_0.png", 1525, 0 },
-	{ "resources/images/1526_0.png", 1526, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1522_0.png", 1522, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1523_0.png", 1523, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1524_0.png", 1524, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1525_0.png", 1525, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1526_0.png", 1526, 0 },
 
 	/* PSP Prologues (after trading cards) */
-	{ "resources/images/1527_0.png", 1527, 0 },
-	{ "resources/images/1528_0.png", 1528, 0 },
-	{ "resources/images/1529_0.png", 1529, 0 },
-	{ "resources/images/1530_0.png", 1530, 0 },
-	{ "resources/images/1531_0.png", 1531, 0 },
-	{ "resources/images/1532_0.png", 1532, 0 },
-	{ "resources/images/1533_0.png", 1533, 0 },
-	{ "resources/images/1536_0.png", 1536, 0 },
-	{ "resources/images/1537_0.png", 1537, 0 },
-	{ "resources/images/1554_0.png", 1554, 0 },
-	{ "resources/images/1555_0.png", 1555, 0 },
-	{ "resources/images/1557_0.png", 1557, 0 },
-	{ "resources/images/1558_0.png", 1558, 0 },
-	{ "resources/images/1559_0.png", 1559, 0 },
-	{ "resources/images/1560_0.png", 1560, 0 },
-	{ "resources/images/1561_0.png", 1561, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1527_0.png", 1527, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1528_0.png", 1528, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1529_0.png", 1529, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1530_0.png", 1530, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1531_0.png", 1531, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1532_0.png", 1532, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1533_0.png", 1533, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1536_0.png", 1536, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1537_0.png", 1537, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1554_0.png", 1554, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1555_0.png", 1555, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1557_0.png", 1557, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1558_0.png", 1558, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1559_0.png", 1559, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1560_0.png", 1560, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1561_0.png", 1561, 0 },
 
 	/* Backgrounds */
-	{ "resources/images/1653_0.png", 1653, 0 },
-	{ "resources/images/1682_0.png", 1682, 0 },
-	{ "resources/images/1690_0.png", 1690, 0 },
-	{ "resources/images/1691_0.png", 1691, 0 },
-	{ "resources/images/1692_0.png", 1692, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1653_0.png", 1653, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1682_0.png", 1682, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1690_0.png", 1690, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1691_0.png", 1691, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/1692_0.png", 1692, 0 },
 
 	/* Menus */
 
-	{ "resources/images/1701_0.png", 1701, 0 },
-	{ "resources/images/2528_1.png", 2528, 1 },
-	{ "resources/images/2529_0.png", 2529, 0 },
-	{ "resources/images/2529_1.png", 2529, 1 },
-	{ "resources/images/2530_0.png", 2530, 0 },
-	{ "resources/images/2530_1.png", 2530, 1 },
-	{ "resources/images/2531_0.png", 2531, 0 },
-	{ "resources/images/2531_1.png", 2531, 1 },
-	{ "resources/images/2532_0.png", 2532, 0 },
-	{ "resources/images/2532_1.png", 2532, 1 },
-	{ "resources/images/2533_0.png", 2533, 0 },
-	{ "resources/images/2533_1.png", 2533, 1 },
-	{ "resources/images/2533_2.png", 2533, 2 },
-	{ "resources/images/2533_5.png", 2533, 5 },
-	{ "resources/images/2533_7.png", 2533, 7 },
-	{ "resources/images/2533_8.png", 2533, 8 },
-	{ "resources/images/2533_9.png", 2533, 9 },
-	{ "resources/images/2538_0.png", 2538, 0 },
-	{ "resources/images/2538_1.png", 2538, 1 },
-	{ "resources/images/2533_10.png", 2533, 10 },
-	{ "resources/images/2533_11.png", 2533, 11 },
-	{ "resources/images/2533_12.png", 2533, 12 },
-	{ "resources/images/2533_13.png", 2533, 13 },
-	{ "resources/images/2533_14.png", 2533, 14 },
-	{ "resources/images/2533_15.png", 2533, 15 },
-	{ "resources/images/2533_16.png", 2533, 16 },
-	{ "resources/images/2533_17.png", 2533, 17 },
-	{ "resources/images/2534_1.png", 2534, 1 },
-	{ "resources/images/2534_7.png", 2534, 7 }
+	{ "resources/RGT_RGO_Patch_Builder/images/1701_0.png", 1701, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2528_1.png", 2528, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2529_0.png", 2529, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2529_1.png", 2529, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2530_0.png", 2530, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2530_1.png", 2530, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2531_0.png", 2531, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2531_1.png", 2531, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2532_0.png", 2532, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2532_1.png", 2532, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_0.png", 2533, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_1.png", 2533, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_2.png", 2533, 2 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_5.png", 2533, 5 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_7.png", 2533, 7 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_8.png", 2533, 8 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_9.png", 2533, 9 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2538_0.png", 2538, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2538_1.png", 2538, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_10.png", 2533, 10 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_11.png", 2533, 11 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_12.png", 2533, 12 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_13.png", 2533, 13 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_14.png", 2533, 14 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_15.png", 2533, 15 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_16.png", 2533, 16 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2533_17.png", 2533, 17 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2534_1.png", 2534, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/2534_7.png", 2534, 7 }
 };
 
 const image_replace_info g_pr_images_to_replace[] =
 {
-	{ "resources/images/pr_0.png", 0, 0 },
-	{ "resources/images/pr_1.png", 0, 1 },
-	{ "resources/images/pr_3.png", 0, 3 },
-	{ "resources/images/pr_4.png", 0, 4 }
+	{ "resources/RGT_RGO_Patch_Builder/images/pr_0.png", 0, 0 },
+	{ "resources/RGT_RGO_Patch_Builder/images/pr_1.png", 0, 1 },
+	{ "resources/RGT_RGO_Patch_Builder/images/pr_3.png", 0, 3 },
+	{ "resources/RGT_RGO_Patch_Builder/images/pr_4.png", 0, 4 }
 };
 
 const script_replace_info g_scripts_to_replace[] =
@@ -582,7 +582,7 @@ patch_union(rgt_u8_array eboot)
 	}
 
 	RGT_CALL(rgt_build_cpk(&arena, union_cpk, &new_union_file));
-	RGT_CALL(rgt_save_file(new_union_file, "results/union.cpk"));
+	RGT_CALL(rgt_save_file(new_union_file, "results/RGT_RGO_Patch_Builder/union.cpk"));
 
 finish:
 
@@ -635,7 +635,7 @@ patch_pr(void)
 
 	rgt_add_checksum_whole_file(pr_file);
 
-	RGT_CALL(rgt_save_file(pr_file, "results/pr.bin"));
+	RGT_CALL(rgt_save_file(pr_file, "results/RGT_RGO_Patch_Builder/pr.bin"));
 
 finish:
 
@@ -766,7 +766,7 @@ patch_scripts(rgt_u8_array eboot)
 	(
 		rgt_load_file
 		(
-			&arena, "resources/font/english_font_strings.txt", 
+			&arena, "resources/RGT_RGO_Patch_Builder/font/english_font_strings.txt", 
 			&font_strings_file
 		)
 	);
@@ -821,7 +821,7 @@ patch_scripts(rgt_u8_array eboot)
 	}
 
 	RGT_CALL(rgt_build_cpk(&arena, cpk, &new_cpk_file));
-	RGT_CALL(rgt_save_file(new_cpk_file, "results/sc.cpk"));
+	RGT_CALL(rgt_save_file(new_cpk_file, "results/RGT_RGO_Patch_Builder/sc.cpk"));
 
 finish:
 
@@ -868,80 +868,80 @@ main(void)
 	rgt_u8_array eboot = {0};
 
 	rgt_create_arena(RGT_MEGABYTE(4), &arena);
-	RGT_CALL(rgt_save_file(eboot, "results/EBOOT.bin"));
+	RGT_CALL(rgt_save_file(eboot, "results/RGT_RGO_Patch_Builder/EBOOT.bin"));
 
-    RGT_CALL(rgt_copy_file("assets/iso/rgopsp.iso", "results/rgopsp.iso"));
+    RGT_CALL(rgt_copy_file("assets/iso/rgopsp.iso", "results/RGT_RGO_Patch_Builder/rgopsp.iso"));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/PARAM.SFO",
-        "resources/param/PARAM.SFO"
+        "resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/lt.bin",
-        "resources/font/lt.bin"
+        "resources/RGT_RGO_Patch_Builder/font/lt.bin"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/sc.cpk",
-        "results/sc.cpk"
+        "results/RGT_RGO_Patch_Builder/sc.cpk"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/union.cpk",
-        "results/union.cpk"
+        "results/RGT_RGO_Patch_Builder/union.cpk"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/pr.bin",
-        "results/pr.bin"
+        "results/RGT_RGO_Patch_Builder/pr.bin"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/op.pmf",
-        "resources/movies/op.pmf"
+        "resources/RGT_RGO_Patch_Builder/movies/op.pmf"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/titlein.pmf",
-        "resources/movies/titlein.pmf"
+        "resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/ed.pmf",
-        "resources/movies/ed.pmf"
+        "resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/mov_10.pmf",
-        "resources/movies/mov_10.pmf"
+        "resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/mov_11.pmf",
-        "resources/movies/mov_11.pmf"
+        "resources/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/mov_09.pmf",
-        "resources/movies/mov_09.pmf"
+        "resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
     ));
     
     RGT_CALL(rgt_umd_replace(
-        "results/rgopsp.iso",
+        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/SYSDIR/EBOOT.bin",
-        "results/EBOOT.bin"
+        "results/RGT_RGO_Patch_Builder/EBOOT.bin"
     ));
 
 finish:
