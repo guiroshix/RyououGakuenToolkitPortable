@@ -869,151 +869,185 @@ main(void)
 
 	rgt_create_arena(RGT_MEGABYTE(16), &arena);
 
-    result = rgt_load_file(&arena, "assets/eboot/EBOOT.BIN", &eboot);
-    if (result != RGT_SUCCESS) {
-        // printff("FAAILED TO LOAD EBOOT");
-        goto finish;
-    }
+	result = rgt_load_file(&arena, "assets/eboot/EBOOT.BIN", &eboot);
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO LOAD EBOOT\n");
+		goto finish;
+	}
 
-    result = patch_union(eboot);
-    if (result != RGT_SUCCESS) {
-        printf("PATCH UNION FAIL");
-        goto finish;
-    }
+	result = patch_union(eboot);
+	if (result != RGT_SUCCESS) {
+		printf("PATCH UNION FAIL\n");
+		goto finish;
+	}
 
-    result = patch_pr();
-    if (result != RGT_SUCCESS) {
-        printf("PATCH_PR FAIL", result);
-        goto finish;
-    }
+	result = patch_pr();
+	if (result != RGT_SUCCESS) {
+		printf("PATCH_PR FAIL: %d\n", result);
+		goto finish;
+	}
 
-    result = patch_scripts(eboot);
-    if (result != RGT_SUCCESS) {
-        printf("PATCH_SCRIPTS FAIL");
-        goto finish;
-    }
+	result = patch_scripts(eboot);
+	if (result != RGT_SUCCESS) {
+		printf("PATCH_SCRIPTS FAIL\n");
+		goto finish;
+	}
 
-    patch_image_regions(eboot);
-    apply_single_instruction_patches(eboot);
-    apply_byte_sequence_patches(eboot);
-    
-    result = rgt_save_file(
-    eboot,
-    "results/RGT_RGO_Patch_Builder/EBOOT.BIN"
-    );
+	patch_image_regions(eboot);
+	apply_single_instruction_patches(eboot);
+	apply_byte_sequence_patches(eboot);
 
-    if (result != RGT_SUCCESS) {
-    printf("FAILED TO SAVE EBOOT");
-    goto finish;
-    }
+	result = rgt_save_file(
+		eboot,
+		"results/RGT_RGO_Patch_Builder/EBOOT.BIN"
+	);
 
-    
-    result = rgt_copy_file("assets/iso/rgopsp.iso", "results/RGT_RGO_Patch_Builder/rgopsp.iso");
-    if (result != RGT_SUCCESS) {
-        printf("FAILED COPYING ISO");
-        goto finish;
-    }
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO SAVE EBOOT\n");
+		goto finish;
+	}
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/PARAM.SFO",
-        "resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FAILED TO REPLACE PARAM.SFO"); goto finish; }
+	result = rgt_copy_file(
+		"assets/iso/rgopsp.iso",
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso"
+	);
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/lt.bin",
-        "resources/RGT_RGO_Patch_Builder/font/lt.bin"
-    );
-    if (result != RGT_SUCCESS) 
-    { printf("FAILED TO REPLACE LT.BIN"); goto finish; }
+	if (result != RGT_SUCCESS) {
+		printf("FAILED COPYING ISO\n");
+		goto finish;
+	}
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/sc.cpk",
-        "results/RGT_RGO_Patch_Builder/sc.cpk"
-    );
-    if (result != RGT_SUCCESS) 
-    { printf("FAILED TO REPLACE SC.CPK"); goto finish; }
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/PARAM.SFO",
+		"resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
+	);
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/union.cpk",
-        "results/RGT_RGO_Patch_Builder/union.cpk"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FAILED TO REPLACE UNION.CPK"); goto finish; }
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO REPLACE PARAM.SFO\n");
+		goto finish;
+	}
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/pr.bin",
-        "results/RGT_RGO_Patch_Builder/pr.bin"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FAILED TO REPLACE PR.BIN"); goto finish; }
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/lt.bin",
+		"resources/RGT_RGO_Patch_Builder/font/lt.bin"
+	);
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/op.pmf",
-        "resources/RGT_RGO_Patch_Builder/movies/op.pmf"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FAILED TO REPLACE OP.PMF); goto finish; }
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO REPLACE LT.BIN\n");
+		goto finish;
+	}
 
-    // Star Wars Text Crawl
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/titlein.pmf",
-        "resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
-    );
-    if (result != RGT_SUCCESS) 
-    { printf("FALHA EM titlein.pmf. Codigo: %d\n", result); goto finish; }
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/sc.cpk",
+		"results/RGT_RGO_Patch_Builder/sc.cpk"
+	);
 
-    // True ending ED
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/ed.pmf",
-        "resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FALHA EM ed.pmf. Codigo: %d\n", result); goto finish; }
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO REPLACE SC.CPK\n");
+		goto finish;
+	}
 
-    // Bad ending ED
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/mov_10.pmf",
-        "resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FALHA EM mov_10.pmf. Codigo: %d\n", result); goto finish; }
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/union.cpk",
+		"results/RGT_RGO_Patch_Builder/union.cpk"
+	);
 
-    // Good ending ED
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/mov_11.pmf",
-        "resources/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
-    );
-    if (result != RGT_SUCCESS) { printf("FALHA EM mov_11.pmf. Codigo: %d\n", result); goto finish; }
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO REPLACE UNION.CPK\n");
+		goto finish;
+	}
 
-    // Konata Accelerator
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/USRDIR/DATA/mov_09.pmf",
-        "resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
-    );
-    if (result != RGT_SUCCESS)
-    { printf("FALHA EM mov_09.pmf. Codigo: %d\n", result); goto finish; }
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/pr.bin",
+		"results/RGT_RGO_Patch_Builder/pr.bin"
+	);
 
-    result = rgt_umd_replace(
-        "results/RGT_RGO_Patch_Builder/rgopsp.iso",
-        "PSP_GAME/SYSDIR/EBOOT.BIN",
-        "results/RGT_RGO_Patch_Builder/EBOOT.BIN"
-    );
-    #ifdef DEBUG
-    if (result != RGT_SUCCESS) { printf("EBOOT FAIL. CD: %d\n", result); goto finish; }
-    #endif
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO REPLACE PR.BIN\n");
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/op.pmf",
+		"resources/RGT_RGO_Patch_Builder/movies/op.pmf"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("FAILED TO REPLACE OP.PMF\n");
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/titlein.pmf",
+		"resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("FALHA EM titlein.pmf. Codigo: %d\n", result);
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/ed.pmf",
+		"resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("FALHA EM ed.pmf. Codigo: %d\n", result);
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/mov_10.pmf",
+		"resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("FALHA EM mov_10.pmf. Codigo: %d\n", result);
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/mov_11.pmf",
+		"resources/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("FALHA EM mov_11.pmf. Codigo: %d\n", result);
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/USRDIR/DATA/mov_09.pmf",
+		"resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("FALHA EM mov_09.pmf. Codigo: %d\n", result);
+		goto finish;
+	}
+
+	result = rgt_umd_replace(
+		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
+		"PSP_GAME/SYSDIR/EBOOT.BIN",
+		"results/RGT_RGO_Patch_Builder/EBOOT.BIN"
+	);
+
+	if (result != RGT_SUCCESS) {
+		printf("EBOOT FAIL. CD: %d\n", result);
+		goto finish;
+	}
 
 finish:
 
