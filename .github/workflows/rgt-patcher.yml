@@ -36,6 +36,8 @@ jobs:
       - name: Debug resources
         run: |
             find resources -maxdepth 4 -type f | head -50
+            ls -lh assets/cpk/union.cpk
+            md5sum assets/cpk/union.cpk
     
       - name: Patch the ISO
         run: |
