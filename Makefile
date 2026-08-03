@@ -1,12 +1,12 @@
 CC = clang
 
-CFLAGS = -g \
+CFLAGS = -g -fsanitize=address -fno-omit-frame-pointer \
 	-Ihdr \
 	-Ilibhdr \
 	-Ilibhdr/libpng \
-	-Ilibhdr/zlib
+	-Ilibhdr/zlib 
 
-LIBS = -lpng -lz -lm
+LIBS = -lpng -lz -lm -fsanitize=address
 
 COMMON = \
 	src/rgt_array.c \
