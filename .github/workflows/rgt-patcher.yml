@@ -29,12 +29,9 @@ jobs:
             python3 -m pip install gdown
             gdown "https://drive.google.com/uc?id=1-sl7qkdImk7T_UVhcK2SOCRhQ5VVN4f5" -O rgo-assets.zip
             unzip rgo-assets.zip
-            mv rgo-assets/* .
-      - name: Check files
+      - name: Check assets
         run: |
-          ls -la
-          find . -maxdepth 2 -type f -name "RGT_RGO_Patch_Builder"
-          find . -maxdepth 2 -type f -name "umd-replace*"
+            find assets -maxdepth 3 -type f
     
       - name: Patch the ISO
         run: |
