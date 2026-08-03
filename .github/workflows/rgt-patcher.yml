@@ -29,7 +29,7 @@ jobs:
             python3 -m pip install gdown
             gdown "https://drive.google.com/uc?id=1-sl7qkdImk7T_UVhcK2SOCRhQ5VVN4f5" -O rgo-assets.zip
             unzip rgo-assets.zip
-
+            mv rgo-assets/* .
       - name: Check files
         run: |
           ls -la
