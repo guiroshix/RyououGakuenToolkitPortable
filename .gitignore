@@ -2,3 +2,5 @@
 results/
 x64/
 assets/
+umd-replace.$
+local/
