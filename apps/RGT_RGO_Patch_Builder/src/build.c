@@ -441,13 +441,15 @@ patch_union_image
 	rgt_rgo_image_array rgo_images = {0};
 	rgt_u8_array new_rgo_image_file = {0};
 	bool preserve_palette = false;
-
+    printf("Patching image %s (id %d)\n", png_path, replace_id);
 	RGT_CALL(rgt_create_arena(RGT_MEGABYTE(32), &arena));
-	
+	printf("Loading png...\n");
 	RGT_CALL(rgt_load_png(&arena, png_path, &image));
+	printf("Loading cpk file...\n");
 	RGT_CALL(rgt_get_cpk_file(*union_cpk, replace_id, &rgo_image_file));
-
+    printf("Parsing rgo...\n");
 	RGT_CALL(rgt_parse_rgo_image_file(&arena, rgo_image_file, &rgo_images));
+	printf("Replacing image...\n");
 	if (replace_id == 2530)
 	{
 		/* Options menu graphics switches palettes to highlight text,
@@ -463,6 +465,7 @@ patch_union_image
 	);
 	RGT_CALL
 	(
+	    printf("Building rgo...\n");
 		rgt_build_rgo_image_file(&arena, rgo_images, &new_rgo_image_file)
 	);
 
@@ -509,7 +512,13 @@ patch_union_image
 		replace_id, replace_index, new_rgo_image_file.length, 
 		eboot, rgo_images
 	);
-
+    if (result != RGT_SUCCESS)
+    {
+        printf("FAILED id=%d path=%s result=%d\n",
+            replace_id,
+            png_path,
+            result);
+    }
 finish:
 
 	rgt_destroy_arena(&arena);
