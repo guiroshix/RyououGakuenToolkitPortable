@@ -19,7 +19,9 @@ rgt_result rgt_umd_replace(const char *iso, const char *file, const char *replac
 {
     char command[1024];
 
-#if defined(__aarch64__) || defined(__arm__)
+#if defined(__ANDROID__)
+    const char *umd = "./umd-replace-android-arm64";
+#elif defined(__aarch64__) || defined(__arm__)
     const char *umd = "./umd-replace-linux-arm64";
 #else
     const char *umd = "./umd-replace-linux-x86_64";
