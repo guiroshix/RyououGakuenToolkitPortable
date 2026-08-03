@@ -920,7 +920,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FAILED TO REPLACE PARAM.SFO"); goto finish; }
+    { printf("FAILED TO REPLACE PARAM.SFO"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
@@ -928,7 +928,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/font/lt.bin"
     );
     if (result != RGT_SUCCESS) 
-    //{ printf("FAILED TO REPLACE LT.BIN"); goto finish; }
+    { printf("FAILED TO REPLACE LT.BIN"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
@@ -936,7 +936,7 @@ main(void)
         "results/RGT_RGO_Patch_Builder/sc.cpk"
     );
     if (result != RGT_SUCCESS) 
-    //{ printf("FAILED TO REPLACE SC.CPK"); goto finish; }
+    { printf("FAILED TO REPLACE SC.CPK"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
@@ -944,7 +944,7 @@ main(void)
         "results/RGT_RGO_Patch_Builder/union.cpk"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FAILED TO REPLACE UNION.CPK"); goto finish; }
+    { printf("FAILED TO REPLACE UNION.CPK"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
@@ -952,7 +952,7 @@ main(void)
         "results/RGT_RGO_Patch_Builder/pr.bin"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FAILED TO REPLACE PR.BIN"); goto finish; }
+    { printf("FAILED TO REPLACE PR.BIN"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
@@ -960,7 +960,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/movies/op.pmf"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FAILED TO REPLACE OP.PMF); goto finish; }
+    { printf("FAILED TO REPLACE OP.PMF); goto finish; }
 
     // Star Wars Text Crawl
     result = rgt_umd_replace(
@@ -969,7 +969,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
     );
     if (result != RGT_SUCCESS) 
-    //{ printf("FALHA EM titlein.pmf. Codigo: %d\n", result); goto finish; }
+    { printf("FALHA EM titlein.pmf. Codigo: %d\n", result); goto finish; }
 
     // True ending ED
     result = rgt_umd_replace(
@@ -978,7 +978,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FALHA EM ed.pmf. Codigo: %d\n", result); goto finish; }
+    { printf("FALHA EM ed.pmf. Codigo: %d\n", result); goto finish; }
 
     // Bad ending ED
     result = rgt_umd_replace(
@@ -987,7 +987,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FALHA EM mov_10.pmf. Codigo: %d\n", result); goto finish; }
+    { printf("FALHA EM mov_10.pmf. Codigo: %d\n", result); goto finish; }
 
     // Good ending ED
     result = rgt_umd_replace(
@@ -995,7 +995,7 @@ main(void)
         "PSP_GAME/USRDIR/DATA/mov_11.pmf",
         "resources/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
     );
-    if (result != RGT_SUCCESS) //{ printf("FALHA EM mov_11.pmf. Codigo: %d\n", result); goto finish; }
+    if (result != RGT_SUCCESS) { printf("FALHA EM mov_11.pmf. Codigo: %d\n", result); goto finish; }
 
     // Konata Accelerator
     result = rgt_umd_replace(
@@ -1004,7 +1004,7 @@ main(void)
         "resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
     );
     if (result != RGT_SUCCESS)
-    //{ printf("FALHA EM mov_09.pmf. Codigo: %d\n", result); goto finish; }
+    { printf("FALHA EM mov_09.pmf. Codigo: %d\n", result); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
