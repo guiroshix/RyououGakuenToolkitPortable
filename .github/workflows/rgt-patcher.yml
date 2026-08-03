@@ -38,12 +38,15 @@ jobs:
     
       - name: Patch the ISO
         run: |
-          chmod +x ./RGT_RGO_Patch_Builder
-          chmod +x ./umd-replace-linux-x86_64
-          ./RGT_RGO_Patch_Builder
+         chmod +x ./RGT_RGO_Patch_Builder
+         chmod +x ./umd-replace-linux-x86_64
+         ls -la RGT_RGO_Patch_Builder umd-replace-linux-x86_64
+         ./RGT_RGO_Patch_Builder
+         
       - name: Upload the Patched ISO
         uses: actions/upload-artifact@v4
         with:
+        
             name: Patched ISO
             path: |
               results/RGT_RGO_Patch_Builder/rgopsp.iso
