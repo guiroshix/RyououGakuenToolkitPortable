@@ -19,14 +19,30 @@ jobs:
         run: chmod +x build.sh
 
       - name: Compile
-        run: ./build.sh
+        run: |
+          ./build.sh
+
+      #- name: Show errors
+        #if: failure()
+        #run: |
+          #grep -n -B5 -A5 "error:" build.log || true
+          #grep -n -B5 -A5 "undefined" build.log || true
+          #tail -100 build.log
 
       - name: Check output
-        run: |
-          ls -la
+        run: ls -la
 
       - name: Upload executables
         uses: actions/upload-artifact@v4
         with:
           name: RyououGakuenToolkit-Linux
-          path: portable/
+          path: |
+            RGT_RGO_Patch_Builder
+            RGOFontExtractor
+            RGOScriptExtractor
+            CPKExtractor
+            RGOImageExtractor
+            NIMImageExtractor
+            ImageColorReducer
+            RGOFontGenerator
+            ScriptMerger

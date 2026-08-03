@@ -1,0 +1,42 @@
+name: Build Toolkit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependences
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential libpng-dev zlib1g-dev unzip
+
+      - name: Permissions
+        run: chmod +x build.sh
+
+      - name: Compile
+        run: ./build.sh
+        
+      #- name: Check output
+      #  run: ls -la
+        
+      - name: Download RGO assets
+        run: |
+            python3 -m pip install gdown
+            gdown "https://drive.google.com/uc?id=1-sl7qkdImk7T_UVhcK2SOCRhQ5VVN4f5" -O rgo-assets.zip
+            unzip rgo-assets.zip
+      - name: Patch the ISO
+        run: |
+          chmod +x ./RGT_RGO_Patch_Builder
+          chmod +x ./umd-replace-linux-x86_64
+          ./RGT_RGO_Patch_Builder
+      - name: Upload the Patched ISO
+        uses: actions/upload-artifact@v4
+        with:
+            name: Patched ISO
+            path: |
+              results/RGT_RGO_Patch_Builder/rgopsp.iso

@@ -6,5 +6,5 @@ make clean
 
 make -B
 
-chmod UMDReplaceK-Linux.bin 2>/dev/null
-chmod UMDReplaceK-Linux-Arm.bin 2>/dev/null
+chmod umd-replace-linux-x86_64 2>/dev/null
+chmod umd-replace-linux-arm64 2>/dev/null
