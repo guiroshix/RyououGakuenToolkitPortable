@@ -13,7 +13,7 @@ jobs:
       - name: Install dependences
         run: |
           sudo apt update
-          sudo apt install -y build-essential libpng-dev zlib1g-dev unzip
+          sudo apt install -y clang libpng-dev zlib1g-dev unzip
 
       - name: Permissions
         run: chmod +x build.sh
