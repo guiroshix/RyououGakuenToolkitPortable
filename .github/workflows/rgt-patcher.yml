@@ -32,6 +32,10 @@ jobs:
       - name: Check assets
         run: |
             find assets -maxdepth 3 -type f
+
+      - name: Debug resources
+        run: |
+            find resources -maxdepth 4 -type f | head -50
     
       - name: Patch the ISO
         run: |
