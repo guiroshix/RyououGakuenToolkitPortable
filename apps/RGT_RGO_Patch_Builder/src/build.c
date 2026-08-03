@@ -512,14 +512,19 @@ patch_union_image
 		replace_id, replace_index, new_rgo_image_file.length, 
 		eboot, rgo_images
 	);
-    if (result != RGT_SUCCESS)
-    {
-        printf("FAILED id=%d path=%s result=%d\n",
-            replace_id,
-            png_path,
-            result);
-    }
+
 finish:
+
+if (result != RGT_SUCCESS)
+{
+    printf("FAILED result=%d on id=%d index=%llu\n",
+        result,
+        replace_id,
+        replace_index);
+}
+
+rgt_destroy_arena(&arena);
+return result;
 
 	rgt_destroy_arena(&arena);
 
