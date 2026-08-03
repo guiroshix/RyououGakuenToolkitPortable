@@ -27,7 +27,7 @@ jobs:
       - name: Download RGO assets
         run: |
             python3 -m pip install gdown
-            gdown "https://drive.google.com/uc?id=1-sl7qkdImk7T_UVhcK2SOCRhQ5VVN4f5" -O rgo-assets.zip
+            gdown "https://drive.google.com/file/d/1m1FXKe1tMIFy3WQSg8AIHQo3nGQALBdF" -O rgo-assets.zip
             unzip rgo-assets.zip
       - name: Check assets
         run: |
