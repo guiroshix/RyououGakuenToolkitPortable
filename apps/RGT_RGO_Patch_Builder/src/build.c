@@ -877,19 +877,19 @@ main(void)
 
     result = patch_union(eboot);
     if (result != RGT_SUCCESS) {
-        printf("PATCH UNION FAIL");
+        //printf("PATCH UNION FAIL");
         goto finish;
     }
 
     result = patch_pr();
     if (result != RGT_SUCCESS) {
-        printf("PATCH_PR FAIL", result);
+        //printf("PATCH_PR FAIL", result);
         goto finish;
     }
 
     result = patch_scripts(eboot);
     if (result != RGT_SUCCESS) {
-        printf("PATCH_SCRIPTS FAIL");
+        //printf("PATCH_SCRIPTS FAIL");
         goto finish;
     }
 
@@ -903,14 +903,14 @@ main(void)
     );
 
     if (result != RGT_SUCCESS) {
-    printf("FAILED TO SAVE EBOOT");
+    //printf("FAILED TO SAVE EBOOT");
     goto finish;
     }
 
     
     result = rgt_copy_file("assets/iso/rgopsp.iso", "results/RGT_RGO_Patch_Builder/rgopsp.iso");
     if (result != RGT_SUCCESS) {
-        printf("FAILED COPYING ISO");
+        //printf("FAILED COPYING ISO");
         goto finish;
     }
 
@@ -919,42 +919,48 @@ main(void)
         "PSP_GAME/PARAM.SFO",
         "resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
     );
-    if (result != RGT_SUCCESS) { printf("FAILED TO REPLACE PARAM.SFO"); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FAILED TO REPLACE PARAM.SFO"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/lt.bin",
         "resources/RGT_RGO_Patch_Builder/font/lt.bin"
     );
-    if (result != RGT_SUCCESS) { printf("FAILED TO REPLACE LT.BIN"); goto finish; }
+    if (result != RGT_SUCCESS) 
+    //{ printf("FAILED TO REPLACE LT.BIN"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/sc.cpk",
         "results/RGT_RGO_Patch_Builder/sc.cpk"
     );
-    if (result != RGT_SUCCESS) { printf("FAILED TO REPLACE SC.CPK"); goto finish; }
+    if (result != RGT_SUCCESS) 
+    //{ printf("FAILED TO REPLACE SC.CPK"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/union.cpk",
         "results/RGT_RGO_Patch_Builder/union.cpk"
     );
-    if (result != RGT_SUCCESS) { printf("FAILED TO REPLACE UNION.CPK"); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FAILED TO REPLACE UNION.CPK"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/pr.bin",
         "results/RGT_RGO_Patch_Builder/pr.bin"
     );
-    if (result != RGT_SUCCESS) { printf("FAILED TO REPLACE PR.BIN"); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FAILED TO REPLACE PR.BIN"); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
         "PSP_GAME/USRDIR/DATA/op.pmf",
         "resources/RGT_RGO_Patch_Builder/movies/op.pmf"
     );
-    if (result != RGT_SUCCESS) { printf("FAILED TO REPLACE OP.PMF); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FAILED TO REPLACE OP.PMF); goto finish; }
 
     // Star Wars Text Crawl
     result = rgt_umd_replace(
@@ -962,7 +968,8 @@ main(void)
         "PSP_GAME/USRDIR/DATA/titlein.pmf",
         "resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
     );
-    if (result != RGT_SUCCESS) { printf("FALHA EM titlein.pmf. Codigo: %d\n", result); goto finish; }
+    if (result != RGT_SUCCESS) 
+    //{ printf("FALHA EM titlein.pmf. Codigo: %d\n", result); goto finish; }
 
     // True ending ED
     result = rgt_umd_replace(
@@ -970,7 +977,8 @@ main(void)
         "PSP_GAME/USRDIR/DATA/ed.pmf",
         "resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
     );
-    if (result != RGT_SUCCESS) { printf("FALHA EM ed.pmf. Codigo: %d\n", result); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FALHA EM ed.pmf. Codigo: %d\n", result); goto finish; }
 
     // Bad ending ED
     result = rgt_umd_replace(
@@ -978,7 +986,8 @@ main(void)
         "PSP_GAME/USRDIR/DATA/mov_10.pmf",
         "resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
     );
-    if (result != RGT_SUCCESS) { printf("FALHA EM mov_10.pmf. Codigo: %d\n", result); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FALHA EM mov_10.pmf. Codigo: %d\n", result); goto finish; }
 
     // Good ending ED
     result = rgt_umd_replace(
@@ -994,7 +1003,8 @@ main(void)
         "PSP_GAME/USRDIR/DATA/mov_09.pmf",
         "resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
     );
-    if (result != RGT_SUCCESS) { printf("FALHA EM mov_09.pmf. Codigo: %d\n", result); goto finish; }
+    if (result != RGT_SUCCESS)
+    //{ printf("FALHA EM mov_09.pmf. Codigo: %d\n", result); goto finish; }
 
     result = rgt_umd_replace(
         "results/RGT_RGO_Patch_Builder/rgopsp.iso",
