@@ -3,7 +3,8 @@
 set -e
 
 make clean
-make
 
-mkdir -p portable
-find . -maxdepth 1 -type f -executable -exec cp {} portable/ \;
+make -B
+
+chmod UMDReplaceK-Linux.bin 2>/dev/null
+chmod UMDReplaceK-Linux-Arm.bin 2>/dev/null

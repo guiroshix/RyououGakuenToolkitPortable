@@ -3,7 +3,7 @@
 
 #define JUMP_TABLE_OFFSET SCRIPT_JUMP_TABLE_OFFSET_RGO
 #define CPK_PATH "assets/sc.cpk"
-#define FONT_STRINGS_PATH "resources/rgo_font_strings.txt"
+#define FONT_STRINGS_PATH "resources/RGOScriptExtractor/rgo_font_strings.txt"
 #define SCRIPT_FIRST 0
 #define SCRIPT_LAST 1
 #define OUT_PATH "results/rgo"

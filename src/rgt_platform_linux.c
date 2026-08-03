@@ -19,9 +19,15 @@ rgt_result rgt_umd_replace(const char *iso, const char *file, const char *replac
 {
     char command[1024];
 
+#if defined(__aarch64__) || defined(__arm__)
+    const char *umd = "./umd-replace-linux-arm64";
+#else
+    const char *umd = "./umd-replace-linux-x86_64";
+#endif
+
     snprintf(command, sizeof(command),
-        "UMDReplaceK-Linux.bin \"%s\" \"%s\" \"%s\"",
-        iso, file, replacement);
+        "\"%s\" \"%s\" \"%s\" \"%s\"",
+        umd, iso, file, replacement);
 
     system(command);
 
