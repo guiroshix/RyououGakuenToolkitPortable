@@ -441,15 +441,15 @@ patch_union_image
 	rgt_rgo_image_array rgo_images = {0};
 	rgt_u8_array new_rgo_image_file = {0};
 	bool preserve_palette = false;
-    printf("Patching image %s (id %d)\n", png_path, replace_id);
+
 	RGT_CALL(rgt_create_arena(RGT_MEGABYTE(32), &arena));
-	printf("Loading png...\n");
+	printf("PUI: arena ok\n");
 	RGT_CALL(rgt_load_png(&arena, png_path, &image));
-	printf("Loading cpk file...\n");
+    printf("PUI: png ok (%s)\n", png_path);
 	RGT_CALL(rgt_get_cpk_file(*union_cpk, replace_id, &rgo_image_file));
-    printf("Parsing rgo...\n");
+    printf("PUI: cpk file ok\n");
 	RGT_CALL(rgt_parse_rgo_image_file(&arena, rgo_image_file, &rgo_images));
-	printf("Replacing image...\n");
+    printf("PUI: rgo parse ok\n");
 	if (replace_id == 2530)
 	{
 		/* Options menu graphics switches palettes to highlight text,
@@ -465,7 +465,6 @@ patch_union_image
 	);
 	RGT_CALL
 	(
-	    printf("Building rgo...\n");
 		rgt_build_rgo_image_file(&arena, rgo_images, &new_rgo_image_file)
 	);
 
@@ -512,19 +511,9 @@ patch_union_image
 		replace_id, replace_index, new_rgo_image_file.length, 
 		eboot, rgo_images
 	);
+printf("PUI: replace ok\n");
 
 finish:
-
-if (result != RGT_SUCCESS)
-{
-    printf("FAILED result=%d on id=%d index=%llu\n",
-        result,
-        replace_id,
-        replace_index);
-}
-
-rgt_destroy_arena(&arena);
-return result;
 
 	rgt_destroy_arena(&arena);
 
@@ -561,7 +550,7 @@ finish:
 	return result;
 }
 
-rgt_result 
+rgt_result
 patch_union(rgt_u8_array eboot)
 {
 	rgt_result result = RGT_SUCCESS;
@@ -572,15 +561,27 @@ patch_union(rgt_u8_array eboot)
 
 	rgt_u8_array new_union_file = {0};
 
+	printf("PU: inicio\n");
+
 	RGT_CALL(rgt_create_arena(RGT_GIGABYTE(2), &arena));
+
+	printf("PU: arena criada\n");
+
 	RGT_CALL
 	(
 		rgt_load_file(&arena, "assets/cpk/union.cpk", &union_file)
 	);
+
+	printf("PU: union carregado\n");
+
 	RGT_CALL(rgt_parse_cpk(&arena, union_file, &union_cpk));
+
+	printf("PU: cpk parseado\n");
 
 	for (u64 i = 0; i < RGT_C_ARRAY_SIZE(g_union_images_to_replace); ++i)
 	{
+		printf("PU: imagem %llu\n", i);
+
 		RGT_CALL
 		(
 			patch_union_image
@@ -595,8 +596,15 @@ patch_union(rgt_u8_array eboot)
 		);
 	}
 
+	printf("PU: imagens terminadas\n");
+
 	RGT_CALL(rgt_build_cpk(&arena, union_cpk, &new_union_file));
+
+	printf("PU: cpk construido\n");
+
 	RGT_CALL(rgt_save_file(new_union_file, "results/RGT_RGO_Patch_Builder/union.cpk"));
+
+	printf("PU: salvo\n");
 
 finish:
 
@@ -750,8 +758,8 @@ void patch_image_regions(rgt_u8_array eboot)
 rgt_result 
 patch_scripts(rgt_u8_array eboot)
 {
-	const int heap_size_high_addr = 0x15B54;
-	const int heap_size_low_addr = 0x15B58;
+	const heap_size_high_addr = 0x15B54;
+	const heap_size_low_addr = 0x15B58;
 
 	rgt_result result = RGT_SUCCESS;
 	rgt_arena arena = {0};
@@ -773,9 +781,9 @@ patch_scripts(rgt_u8_array eboot)
 		memcpy(&heap_size_high, &eboot.elems[heap_size_high_addr], 2);
 		script_heap_size = (u32)(heap_size_high << 16) | (u32)heap_size_low;
 	}
-
+    printf("PS: inicio\n");
 	RGT_CALL(rgt_create_arena(RGT_GIGABYTE(1), &arena));
-
+    printf("PS: arena ok\n");
 	RGT_CALL
 	(
 		rgt_load_file
@@ -784,6 +792,7 @@ patch_scripts(rgt_u8_array eboot)
 			&font_strings_file
 		)
 	);
+    printf("PS: font ok\n");
 	RGT_CALL(rgt_text_to_lines(&arena, font_strings_file, &font_strings));
 	RGT_CREATE_ARRAY(&arena, font_strings.length, &font_strings_utf8);
 	for (u64 i = 0; i < font_strings.length; ++i)
@@ -799,7 +808,9 @@ patch_scripts(rgt_u8_array eboot)
 	}
 
 	RGT_CALL(rgt_load_file(&arena, "assets/cpk/sc.cpk", &cpk_file));
+    printf("PS: sc carregado\n");
 	RGT_CALL(rgt_parse_cpk(&arena, cpk_file, &cpk));
+    printf("PS: sc parse ok\n");
 
 	for (u64 i = 0; i < RGT_C_ARRAY_SIZE(g_scripts_to_replace); ++i)
 	{
@@ -934,7 +945,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/PARAM.SFO",
-		"resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/param/PARAM.SFO"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -945,7 +956,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/lt.bin",
-		"resources/RGT_RGO_Patch_Builder/font/lt.bin"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/font/lt.bin"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -989,7 +1000,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/op.pmf",
-		"resources/RGT_RGO_Patch_Builder/movies/op.pmf"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/op.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1000,7 +1011,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/titlein.pmf",
-		"resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/titlein.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1011,7 +1022,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/ed.pmf",
-		"resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/ed.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1022,7 +1033,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/mov_10.pmf",
-		"resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1033,7 +1044,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/mov_11.pmf",
-		"resources/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1044,7 +1055,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/mov_09.pmf",
-		"resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
+		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
