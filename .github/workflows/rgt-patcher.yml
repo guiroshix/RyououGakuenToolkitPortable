@@ -13,7 +13,7 @@ jobs:
       - name: Install dependences
         run: |
           sudo apt update
-          sudo apt install -y clang libpng-dev zlib1g-dev unzip
+          sudo apt install -y gcc libpng-dev zlib1g-dev unzip
 
       - name: Permissions
         run: chmod +x build.sh
@@ -27,7 +27,7 @@ jobs:
       - name: Download RGO assets
         run: |
             python3 -m pip install gdown
-            gdown "1m1FXKe1tMIFy3WQSg8AIHQo3nGQALBdF" -O rgo-assets.zip
+            gdown " " -O rgo-assets.zip
             unzip rgo-assets
       - name: Check assets
         run: |
