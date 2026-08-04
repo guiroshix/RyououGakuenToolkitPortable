@@ -945,7 +945,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/PARAM.SFO",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/param/PARAM.SFO"
+		"resources/RGT_RGO_Patch_Builder/param/PARAM.SFO"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -956,7 +956,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/lt.bin",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/font/lt.bin"
+		"resources/RGT_RGO_Patch_Builder/font/lt.bin"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1000,7 +1000,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/op.pmf",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/op.pmf"
+		"resources/RGT_RGO_Patch_Builder/movies/op.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1011,7 +1011,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/titlein.pmf",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/titlein.pmf"
+		"resources/RGT_RGO_Patch_Builder/movies/titlein.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1022,7 +1022,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/ed.pmf",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/ed.pmf"
+		"resources/RGT_RGO_Patch_Builder/movies/ed.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1033,7 +1033,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/mov_10.pmf",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
+		"resources/RGT_RGO_Patch_Builder/movies/mov_10.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1044,7 +1044,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/mov_11.pmf",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
+		"resources/RGT_RGO_Patch_Builder/movies/mov_11.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
@@ -1055,7 +1055,7 @@ main(void)
 	result = rgt_umd_replace(
 		"results/RGT_RGO_Patch_Builder/rgopsp.iso",
 		"PSP_GAME/USRDIR/DATA/mov_09.pmf",
-		"resources/RGT_RGO_Patch_Builder/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
+		"resources/RGT_RGO_Patch_Builder/movies/mov_09.pmf"
 	);
 
 	if (result != RGT_SUCCESS) {
