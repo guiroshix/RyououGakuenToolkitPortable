@@ -1,4 +1,4 @@
-CC = clang
+CC = gcc
 
 CFLAGS = -g -fsanitize=address -fno-omit-frame-pointer \
 	-Ihdr \
