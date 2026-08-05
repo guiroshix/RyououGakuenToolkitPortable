@@ -28,15 +28,15 @@ And if you don't want to put weight for you storage, a totally os and storage fr
 
 Select your platform:
 
-- [Linux](wiki/Linux-Setup)
-- [Windows](wiki/Windows-Setup)
-- [Android](wiki/Android-Setup)
+- [Linux](wiki/Troubleshooting)
+- [Windows](wiki/Troubleshooting)
+- [Android](wiki/Troubleshooting)
 
 ## Patching tool
 
 ### RGT_RGO_Patch_Builder
 
-[Patching Guide](wiki/RGO-Patch-Builder)
+[Patching Guide](wiki/Troubleshooting)
 
 ### RGOFontGenerator
 
