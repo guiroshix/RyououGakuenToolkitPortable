@@ -1,3 +1,6 @@
+## THIS REPO MAY NOT BE UPDATED IN SOME TIME, I'M CURRENTLY BUSY WITH MY OWN TRANSLATIONS SO I'LL UPDATE THIS FROM TIME TO TIME!
+ If you stubbon uppon an issue, DM me on Discord @guiroshix or join the [Ryouou Gakuen Research Club](https://discord.gg/G2vY4ysCFu)
+
 # Ryouou Gakuen Toolkit Portable W.I.P
 
 <p align="center">
@@ -5,10 +8,6 @@
 </p>
 
 An accessible version of [RyououGakuenToolkit](https://github.com/TimepieceMaster/RyououGakuenToolkit).
-
-## THIS REPO MAY NOT BE UPDATED IN SOME TIME, I'M CURRENTLY BUSY WITH MY OWN TRANSLATIONS SO I'LL UPDATE THIS FROM TIME TO TIME!
- If you stubbon uppon an issue, DM me on Discord or join the [Ryouou Gakuen Research Club](https://discord.gg/G2vY4ysCFu)
-
 
 All the internal code and initial project was originally made by TimepieceMaster, I just adapted the code to support other platforms.
 
