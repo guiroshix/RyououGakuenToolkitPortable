@@ -1,10 +1,14 @@
-# Ryouou Gakuen Toolkit Portable
+# Ryouou Gakuen Toolkit Portable W.I.P
 
 <p align="center">
   <img src="docs/imgs/tuka-wip.png">
 </p>
 
 An accessible version of [RyououGakuenToolkit](https://github.com/TimepieceMaster/RyououGakuenToolkit).
+
+# THIS REPO MAY NOT BE UPDATED IN SOME TIME, I'M CURRENTLY BUSY WITH MY OWN TRANSLATIONS SO I'LL UPDATE THIS FROM TIME TO TIME!
+ If you stubbon uppon an issue, DM me on Discord or join the [Ryouou Gakuen Research Club](https://discord.gg/G2vY4ysCFu)
+
 
 All the internal code and initial project was originally made by TimepieceMaster, I just adapted the code to support other platforms.
 
@@ -38,7 +42,7 @@ Select your platform:
 
 Pretty useful and necessary if you will mess with translations to non-english
 
-[Font Guide](wiki/Font-Tools)
+[Font Guide](wiki/Troubleshooting)
 
 ## Contribute
 
