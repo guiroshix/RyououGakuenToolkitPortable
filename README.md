@@ -17,12 +17,6 @@ Compatible with Linux, Windows and Android.
 
 It also includes a portable patcher powered by GitHub Actions that automatically handles the required assets, so no local installation or asset management is needed.
 
-## Features
-
-- Extract tools
-- Patching tools
-- Font tools
-
 ## Getting Started
 
 Select your platform:
