@@ -27,21 +27,21 @@ And if you don't want to put weight for you storage, a totally os and storage fr
 
 Select your platform:
 
-- [Linux](wiki/Troubleshooting)
-- [Windows](wiki/Troubleshooting)
-- [Android](wiki/Troubleshooting)
+- [Linux](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
+- [Windows](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
+- [Android](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
 
 ## Patching tool
 
 ### RGT_RGO_Patch_Builder
 
-[Patching Guide](wiki/Troubleshooting)
+[Patching Guide](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
 
 ### RGOFontGenerator
 
 Pretty useful and necessary if you will mess with translations to non-english
 
-[Font Guide](wiki/Troubleshooting)
+[Font Guide](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
 
 ## Contribute
 
