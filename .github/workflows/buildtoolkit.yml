@@ -5,44 +5,91 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: linux-x86_64
+            os: ubuntu-latest
+            cc: gcc
+
+          - name: linux-arm64
+            os: ubuntu-24.04-arm
+            cc: gcc
+
+          - name: windows-x64
+            os: ubuntu-latest
+            cc: x86_64-w64-mingw32-gcc
+
+          - name: windows-x86
+            os: ubuntu-latest
+            cc: i686-w64-mingw32-gcc
+
+          - name: android-arm64
+            os: ubuntu-latest
+            android: true
+
+    runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependences
+      - name: Install Linux/Windows dependencies
+        if: matrix.android != true
         run: |
           sudo apt update
-          sudo apt install -y build-essential libpng-dev zlib1g-dev
+          sudo apt install -y \
+            build-essential \
+            libpng-dev \
+            zlib1g-dev \
+            gcc-mingw-w64 \
+            gcc-mingw-w64-i686 \
+            zip
+
+      - name: Setup Android NDK
+        if: matrix.android == true
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r27c
+
+      - name: Configure Android compiler
+        if: matrix.android == true
+        run: |
+          echo "CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang" >> $GITHUB_ENV
+
+      - name: Configure compiler
+        if: matrix.android != true
+        run: |
+          echo "CC=${{ matrix.cc }}" >> $GITHUB_ENV
 
       - name: Permissions
         run: chmod +x build.sh
 
-      - name: Compile
+      - name: Build
         run: |
           ./build.sh
 
-      #- name: Show errors
-        #if: failure()
-        #run: |
-          #grep -n -B5 -A5 "error:" build.log || true
-          #grep -n -B5 -A5 "undefined" build.log || true
-          #tail -100 build.log
+      - name: Package
+        run: |
+          mkdir package
 
-      - name: Check output
-        run: ls -la
+          cp \
+            RGT_RGO_Patch_Builder \
+            RGOFontExtractor \
+            RGOScriptExtractor \
+            CPKExtractor \
+            RGOImageExtractor \
+            NIMImageExtractor \
+            ImageColorReducer \
+            RGOFontGenerator \
+            ScriptMerger \
+            package/
 
-      - name: Upload executables
+          cd package
+          zip -r ../rgo-toolkit-compiled-${{ matrix.name }}.zip .
+
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: RyououGakuenToolkit-Linux
-          path: |
-            RGT_RGO_Patch_Builder
-            RGOFontExtractor
-            RGOScriptExtractor
-            CPKExtractor
-            RGOImageExtractor
-            NIMImageExtractor
-            ImageColorReducer
-            RGOFontGenerator
-            ScriptMerger
+          name: rgo-toolkit-compiled-${{ matrix.name }}
+          path: rgo-toolkit-compiled-${{ matrix.name }}.zip
