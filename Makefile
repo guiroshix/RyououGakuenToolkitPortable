@@ -1,12 +1,12 @@
 CC = gcc
 
-CFLAGS = -g -fsanitize=address -fno-omit-frame-pointer \
+CFLAGS = -g \
 	-Ihdr \
 	-Ilibhdr \
 	-Ilibhdr/libpng \
 	-Ilibhdr/zlib 
 
-LIBS = -lpng -lz -lm -fsanitize=address
+LIBS = -lpng -lz -lm
 
 COMMON = \
 	src/rgt_array.c \
@@ -44,6 +44,7 @@ RGT_RGO_Patch_Builder:
 	apps/RGT_RGO_Patch_Builder/src/script_0_implementation.c \
 	apps/RGT_RGO_Patch_Builder/src/script_1_implementation.c \
 	src/rgt_platform_linux.c \
+    src/rgt_platform_windows.c
 	$(COMMON) \
 	-Iapps/RGT_RGO_Patch_Builder/hdr \
 	-o $@ \
