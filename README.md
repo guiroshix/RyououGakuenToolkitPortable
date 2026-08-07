@@ -1,5 +1,5 @@
 ## This repo is a work in progress!
- If you stumble upon an issue, DM me on Discord @guiroshix or join the [Ryouou Gakuen Research Club](https://discord.gg/G2vY4ysCFu)
+Check the wiki if you want to use the project anyways!
 
 # Ryouou Gakuen Toolkit Portable W.I.P
 
