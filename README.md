@@ -1,11 +1,7 @@
-## THIS REPO MAY NOT BE UPDATED IN SOME TIME, I'M CURRENTLY BUSY WITH MY OWN TRANSLATIONS SO I'LL UPDATE THIS FROM TIME TO TIME!
+## This repo is a work in progress!
  If you stumble upon an issue, DM me on Discord @guiroshix or join the [Ryouou Gakuen Research Club](https://discord.gg/G2vY4ysCFu)
 
 # Ryouou Gakuen Toolkit Portable W.I.P
-
-<p align="center">
-  <img src="docs/imgs/tuka-wip.png">
-</p>
 
 An accessible version of [RyououGakuenToolkit](https://github.com/TimepieceMaster/RyououGakuenToolkit).
 
@@ -18,12 +14,7 @@ Compatible with Linux, Windows and Android.
 It also includes a portable patcher powered by GitHub Actions that automatically handles the required assets, so no local installation or asset management is needed.
 
 ## Getting Started
-
-Select your platform:
-
-- [Linux](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
-- [Windows](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
-- [Android](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
+Check the wiki
 
 ## Patching tool
 
