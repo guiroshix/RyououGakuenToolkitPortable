@@ -14,22 +14,12 @@ Compatible with Linux, Windows and Android.
 It also includes a portable patcher powered by GitHub Actions that automatically handles the required assets, so no local installation or asset management is needed.
 
 ## Getting Started
-Check the wiki
+[Here you can check how you can check how you can get set up.](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/General-Troubleshooting)
 
-## Patching tool
-
-### RGT_RGO_Patch_Builder
-
-[Patching Guide](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
-
-### RGOFontGenerator
-
-Pretty useful and necessary if you will mess with translations to non-English
-
-[Font Guide](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/Troubleshooting)
+## Tools
+[Here you can check how some of the tools work.](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/3.-Tools)
 
 ## Contribute
-
 Pull requests and suggestions are fine, just keep in mind I made this project to help people who had the same issues that I had.
 
 ## License
