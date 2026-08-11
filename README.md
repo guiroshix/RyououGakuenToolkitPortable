@@ -14,10 +14,10 @@ Compatible with Linux, Windows and Android.
 It also includes a portable patcher powered by GitHub Actions that automatically handles the required assets, so no local installation or asset management is needed.
 
 ## Getting Started
-[Here you can check how you can check how you can get set up.](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/General-Troubleshooting)
+Click to check how you can get [set up](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/General-Troubleshooting).
 
 ## Tools
-[Here you can check how some of the tools work.](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/3.-Tools)
+Click here to check how [some of the tools work](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/3.-Tools).
 
 ## Contribute
 Pull requests and suggestions are fine, just keep in mind I made this project to help people who had the same issues that I had.
