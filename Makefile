@@ -40,16 +40,15 @@ all: \
 
 RGT_RGO_Patch_Builder:
 	$(CC) $(CFLAGS) \
-	apps/RGT_RGO_Patch_Builder/src/build.c \
-	apps/RGT_RGO_Patch_Builder/src/header_data_implementation.c \
-	apps/RGT_RGO_Patch_Builder/src/script_0_implementation.c \
-	apps/RGT_RGO_Patch_Builder/src/script_1_implementation.c \
-	src/rgt_platform_linux.c \
-    src/rgt_platform_windows.c
-	$(COMMON) \
-	-Iapps/RGT_RGO_Patch_Builder/hdr \
-	-o $@ \
-	$(LIBS)
+		-Iapps/RGT_RGO_Patch_Builder/hdr \
+		apps/RGT_RGO_Patch_Builder/src/build.c \
+		apps/RGT_RGO_Patch_Builder/src/header_data_implementation.c \
+		apps/RGT_RGO_Patch_Builder/src/script_0_implementation.c \
+		apps/RGT_RGO_Patch_Builder/src/script_1_implementation.c \
+		$(COMMON) \
+		$(PLATFORM_SRC) \
+		-o $@ \
+		$(LIBS)
 
 
 RGOFontExtractor:
