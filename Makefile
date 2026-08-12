@@ -25,6 +25,11 @@ COMMON = \
 	src/rgt_string.c \
 	src/rgt_utf8.c
 
+ifeq ($(findstring mingw,$(CC)),mingw)
+	PLATFORM_SRC = src/rgt_platform_windows.c
+else
+	PLATFORM_SRC = src/rgt_platform_linux.c
+endif
 
 all: \
 	RGT_RGO_Patch_Builder \
