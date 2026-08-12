@@ -4,7 +4,8 @@ CFLAGS = -g \
 	-Ihdr \
 	-Ilibhdr \
 	-Ilibhdr/libpng \
-	-Ilibhdr/zlib 
+	-Ilibhdr/zlib \
+    -Iapps/RGT_RGO_Patch_Builder/hdr 
 
 LIBS = -lpng -lz -lm
 
