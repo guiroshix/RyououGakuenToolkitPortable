@@ -25,9 +25,9 @@ jobs:
             os: ubuntu-latest
             cc: i686-w64-mingw32-gcc
 
-          - name: android-arm64
-            os: ubuntu-latest
-            android: true
+          #- name: android-arm64
+            #os: ubuntu-latest
+            #android: true
 
     runs-on: ${{ matrix.os }}
 
@@ -46,21 +46,21 @@ jobs:
             gcc-mingw-w64-i686 \
             zip
 
-      - name: Setup Android NDK
-        if: matrix.android == true
-        uses: nttld/setup-ndk@v1
-        with:
-          ndk-version: r27c
+      #- name: Setup Android NDK
+        #if: matrix.android == true
+        #uses: nttld/setup-ndk@v1
+        #with:
+          #ndk-version: r27c
 
-      - name: Configure Android compiler
-        if: matrix.android == true
-        run: |
-          echo "CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang" >> $GITHUB_ENV
+      #- name: Configure Android compiler
+        #if: matrix.android == true
+        #run: |
+          #echo "CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang" >> $GITHUB_ENV
 
-      - name: Configure compiler
-        if: matrix.android != true
-        run: |
-          echo "CC=${{ matrix.cc }}" >> $GITHUB_ENV
+      #- name: Configure compiler
+        #if: matrix.android != true
+        #run: |
+          #echo "CC=${{ matrix.cc }}" >> $GITHUB_ENV
 
       - name: Permissions
         run: chmod +x build.sh
