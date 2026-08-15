@@ -1,7 +1,4 @@
-## This repo is a work in progress!
-Check the wiki if you want to use the project anyways!
-
-# Ryouou Gakuen Toolkit Portable W.I.P
+# Ryouou Gakuen Toolkit Portable
 
 An accessible version of [RyououGakuenToolkit](https://github.com/TimepieceMaster/RyououGakuenToolkit).
 
@@ -16,12 +13,11 @@ It also includes a portable patcher powered by GitHub Actions that automatically
 ## Getting Started
 Click to check how you can get [set up](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/General-Troubleshooting).
 
-## Tools
-Click here to check how [some of the tools work](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/3.-Tools).
-
 ## Contribute
 Pull requests and suggestions are fine, just keep in mind I made this project to help people who had the same issues that I had.
 
+## Wiki
+Click here to get to the [wiki](https://github.com/guiroshix/RyououGakuenToolkitPortable/wiki/)
 ## License
 
 GPL-3.0
