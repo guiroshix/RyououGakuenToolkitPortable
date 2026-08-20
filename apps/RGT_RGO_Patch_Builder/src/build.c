@@ -1,9 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS
+//#define RANDOMIZER
 
 #include "header_data.h"
 
 #include "ryouou_gakuen_toolkit.h"
 #include <stdlib.h>
+#include <time.h>
 
 typedef struct _image_replace_info
 {
@@ -22,8 +24,17 @@ const image_replace_info g_union_images_to_replace[] =
 {
 	/* Story CGs */
 	{ "resources\\images\\873_0.png", 873, 0 },
+	{ "resources\\images\\920_0.png", 920, 0 },
+	{ "resources\\images\\921_0.png", 921, 0 },
+	{ "resources\\images\\922_0.png", 922, 0 },
+	{ "resources\\images\\933_0.png", 933, 0 },
+	{ "resources\\images\\934_0.png", 934, 0 },
+	{ "resources\\images\\935_0.png", 935, 0 },
 	{ "resources\\images\\984_0.png", 984, 0 },
 	{ "resources\\images\\1000_0.png", 1000, 0 },
+	{ "resources\\images\\1019_0.png", 1019, 0 },
+	{ "resources\\images\\1020_0.png", 1020, 0 },
+	{ "resources\\images\\1021_0.png", 1021, 0 },
 	{ "resources\\images\\1028_0.png", 1028, 0 },
 	{ "resources\\images\\1029_0.png", 1029, 0 },
 	{ "resources\\images\\1044_0.png", 1044, 0 },
@@ -51,16 +62,21 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1084_0.png", 1084, 0 },
 	{ "resources\\images\\1085_0.png", 1085, 0 },
 	{ "resources\\images\\1092_0.png", 1092, 0 },
+	{ "resources\\images\\1093_0.png", 1093, 0 },
 	{ "resources\\images\\1094_0.png", 1094, 0 },
 	{ "resources\\images\\1095_0.png", 1095, 0 },
 	{ "resources\\images\\1096_0.png", 1096, 0 },
 	{ "resources\\images\\1097_0.png", 1097, 0 },
 	{ "resources\\images\\1098_0.png", 1098, 0 },
 	{ "resources\\images\\1099_0.png", 1099, 0 },
+	{ "resources\\images\\1100_0.png", 1100, 0 },
+	{ "resources\\images\\1101_0.png", 1101, 0 },
 	{ "resources\\images\\1106_0.png", 1106, 0 },
 	{ "resources\\images\\1107_0.png", 1107, 0 },
 	{ "resources\\images\\1108_0.png", 1108, 0 },
 	{ "resources\\images\\1111_0.png", 1111, 0 },
+	{ "resources\\images\\1112_0.png", 1112, 0 },
+	{ "resources\\images\\1114_0.png", 1114, 0 },
 	{ "resources\\images\\1115_0.png", 1115, 0 },
 	{ "resources\\images\\1116_0.png", 1116, 0 },
 	{ "resources\\images\\1117_0.png", 1117, 0 },
@@ -69,6 +85,7 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1120_0.png", 1120, 0 },
 	{ "resources\\images\\1121_0.png", 1121, 0 },
 	{ "resources\\images\\1122_0.png", 1122, 0 },
+	{ "resources\\images\\1123_0.png", 1123, 0 },
 	{ "resources\\images\\1124_0.png", 1124, 0 },
 	{ "resources\\images\\1135_0.png", 1135, 0 },
 	{ "resources\\images\\1136_0.png", 1136, 0 },
@@ -77,6 +94,7 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1145_0.png", 1145, 0 },
 	{ "resources\\images\\1146_0.png", 1146, 0 },
 	{ "resources\\images\\1147_0.png", 1147, 0 },
+	{ "resources\\images\\1148_0.png", 1148, 0 },
 	{ "resources\\images\\1149_0.png", 1149, 0 },
 	{ "resources\\images\\1150_0.png", 1150, 0 },
 	{ "resources\\images\\1151_0.png", 1151, 0 },
@@ -99,6 +117,9 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1169_0.png", 1169, 0 },
 	{ "resources\\images\\1170_0.png", 1170, 0 },
 	{ "resources\\images\\1171_0.png", 1171, 0 },
+	{ "resources\\images\\1172_0.png", 1172, 0 },
+	{ "resources\\images\\1173_0.png", 1173, 0 },
+	{ "resources\\images\\1174_0.png", 1174, 0 },
 	{ "resources\\images\\1175_0.png", 1175, 0 },
 	{ "resources\\images\\1176_0.png", 1176, 0 },
 	{ "resources\\images\\1180_0.png", 1180, 0 },
@@ -114,6 +135,28 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1223_0.png", 1223, 0 },
 	{ "resources\\images\\1225_0.png", 1225, 0 },
 	{ "resources\\images\\1226_0.png", 1226, 0 },
+	{ "resources\\images\\1227_0.png", 1227, 0 },
+	{ "resources\\images\\1229_0.png", 1229, 0 },
+	{ "resources\\images\\1230_0.png", 1230, 0 },
+	{ "resources\\images\\1231_0.png", 1231, 0 },
+	{ "resources\\images\\1233_0.png", 1233, 0 },
+	{ "resources\\images\\1234_0.png", 1234, 0 },
+	{ "resources\\images\\1235_0.png", 1235, 0 },
+	{ "resources\\images\\1236_0.png", 1236, 0 },
+	{ "resources\\images\\1237_0.png", 1237, 0 },
+	{ "resources\\images\\1238_0.png", 1238, 0 },
+	{ "resources\\images\\1239_0.png", 1239, 0 },
+	{ "resources\\images\\1240_0.png", 1240, 0 },
+	{ "resources\\images\\1241_0.png", 1241, 0 },
+	{ "resources\\images\\1242_0.png", 1242, 0 },
+	{ "resources\\images\\1243_0.png", 1243, 0 },
+	{ "resources\\images\\1244_0.png", 1244, 0 },
+	{ "resources\\images\\1245_0.png", 1245, 0 },
+	{ "resources\\images\\1246_0.png", 1246, 0 },
+	{ "resources\\images\\1247_0.png", 1247, 0 },
+	{ "resources\\images\\1248_0.png", 1248, 0 },
+	{ "resources\\images\\1249_0.png", 1249, 0 },
+	{ "resources\\images\\1250_0.png", 1250, 0 },
 	{ "resources\\images\\1292_0.png", 1292, 0 },
 	{ "resources\\images\\1296_0.png", 1296, 0 },
 	{ "resources\\images\\1298_0.png", 1298, 0 },
@@ -122,7 +165,17 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1301_0.png", 1301, 0 },
 	{ "resources\\images\\1304_0.png", 1304, 0 },
 	{ "resources\\images\\1316_0.png", 1316, 0 },
+	{ "resources\\images\\1318_0.png", 1318, 0 },
+	{ "resources\\images\\1319_0.png", 1319, 0 },
+	{ "resources\\images\\1320_0.png", 1320, 0 },
+	{ "resources\\images\\1321_0.png", 1321, 0 },
+	{ "resources\\images\\1322_0.png", 1322, 0 },
+	{ "resources\\images\\1323_0.png", 1323, 0 },
+	{ "resources\\images\\1324_0.png", 1324, 0 },
+	{ "resources\\images\\1325_0.png", 1325, 0 },
+	{ "resources\\images\\1328_0.png", 1328, 0 },
 	{ "resources\\images\\1330_0.png", 1330, 0 },
+	{ "resources\\images\\1332_0.png", 1332, 0 },
 	{ "resources\\images\\1334_0.png", 1334, 0 },
 	{ "resources\\images\\1337_0.png", 1337, 0 },
 	{ "resources\\images\\1343_0.png", 1343, 0 },
@@ -131,6 +184,7 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1361_0.png", 1361, 0 },
 	{ "resources\\images\\1415_0.png", 1415, 0 },
 	{ "resources\\images\\1416_0.png", 1416, 0 },
+	{ "resources\\images\\1417_0.png", 1417, 0 },
 	{ "resources\\images\\1418_0.png", 1418, 0 },
 	{ "resources\\images\\1419_0.png", 1419, 0 },
 	{ "resources\\images\\1420_0.png", 1420, 0 },
@@ -144,6 +198,10 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1428_0.png", 1428, 0 },
 	{ "resources\\images\\1429_0.png", 1429, 0 },
 	{ "resources\\images\\1430_0.png", 1430, 0 },
+	{ "resources\\images\\1431_0.png", 1431, 0 },
+	{ "resources\\images\\1432_0.png", 1432, 0 },
+	{ "resources\\images\\1433_0.png", 1433, 0 },
+	{ "resources\\images\\1434_0.png", 1434, 0 },
 	{ "resources\\images\\1439_0.png", 1439, 0 },
 	{ "resources\\images\\1440_0.png", 1440, 0 },
 	{ "resources\\images\\1441_0.png", 1441, 0 },
@@ -234,6 +292,7 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1559_0.png", 1559, 0 },
 	{ "resources\\images\\1560_0.png", 1560, 0 },
 	{ "resources\\images\\1561_0.png", 1561, 0 },
+	{ "resources\\images\\1565_0.png", 1565, 0 },
 
 	/* Backgrounds */
 	{ "resources\\images\\1653_0.png", 1653, 0 },
@@ -241,6 +300,7 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\1690_0.png", 1690, 0 },
 	{ "resources\\images\\1691_0.png", 1691, 0 },
 	{ "resources\\images\\1692_0.png", 1692, 0 },
+	{ "resources\\images\\1696_0.png", 1696, 0 },
 
 	/* Menus */
 
@@ -272,6 +332,8 @@ const image_replace_info g_union_images_to_replace[] =
 	{ "resources\\images\\2533_16.png", 2533, 16 },
 	{ "resources\\images\\2533_17.png", 2533, 17 },
 	{ "resources\\images\\2534_1.png", 2534, 1 },
+	{ "resources\\images\\2534_4.png", 2534, 4 },
+	{ "resources\\images\\2534_5.png", 2534, 5 },
 	{ "resources\\images\\2534_7.png", 2534, 7 }
 };
 
@@ -484,6 +546,7 @@ patch_union_image
 		|| replace_id == 1201
 		|| replace_id == 1298
 		|| replace_id == 1299
+		|| replace_id == 1332
 		|| replace_id == 1436
 	)
 	{
@@ -800,6 +863,16 @@ patch_scripts(rgt_u8_array eboot)
 				font_strings_utf8, &script
 			)
 		);
+#ifdef RANDOMIZER
+		srand(time(NULL));
+		for (u32 i = 0; i < script.jumps.length; ++i)
+		{
+			u32 swap_index = rand() % script.jumps.length;
+			u32 temp = script.jumps.elems[i];
+			script.jumps.elems[i] = script.jumps.elems[swap_index];
+			script.jumps.elems[swap_index] = script.jumps.elems[i];
+		}
+#endif
 		RGT_CALL(rgt_build_rgo_script(&arena, script, SCRIPT_JUMP_TABLE_OFFSET_RGO, &script_file));
 		RGT_CALL(rgt_remove_cpk_file(&arena, &cpk, id));
 		RGT_CALL(rgt_add_cpk_file(&arena, &cpk, id, script_file));

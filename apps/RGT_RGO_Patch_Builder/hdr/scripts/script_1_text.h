@@ -175,7 +175,7 @@ static char s_dialogs_28_message_data[] =
 static char s_dialogs_29_speaker_data[] = 
 	"Konata Izumi";
 static char s_dialogs_29_message_data[] = 
-	"Yeah, Yoshi-kun, what a disaster, huh?/n"
+	"Yeah, /l-kun, what a disaster, huh?/n"
 	"Your carelessness got yourself separated.";
 
 static char s_dialogs_30_speaker_data[] = 
@@ -619,7 +619,7 @@ static char s_dialogs_103_message_data[] =
 static char s_dialogs_104_speaker_data[] = 
 	"Konata Izumi";
 static char s_dialogs_104_message_data[] = 
-	"Yoshi-kun,/n"
+	"/l-kun,/n"
 	"whatcha staring off into space for?/n"
 	"I've found us some empty seats!";
 
@@ -902,7 +902,7 @@ static char s_dialogs_151_message_data[] =
 static char s_dialogs_152_speaker_data[] = 
 	"Konata Izumi";
 static char s_dialogs_152_message_data[] = 
-	"Don't you want to win, Yoshi-kun?/n"
+	"Don't you want to win, /l-kun?/n"
 	"Rare goods are on the line!";
 
 static char s_dialogs_153_speaker_data[] = 
@@ -940,7 +940,7 @@ static char s_dialogs_158_speaker_data[] =
 static char s_dialogs_158_message_data[] = 
 	"It's our last highschool festival./n"
 	"Don't you want to make memories with me,/n"
-	"Yoshi-kun?";
+	"/l-kun?";
 
 static char s_dialogs_159_speaker_data[] = 
 	"/l /f";
@@ -1006,7 +1006,7 @@ static char s_dialogs_169_speaker_data[] =
 	"Konata Izumi";
 static char s_dialogs_169_message_data[] = 
 	"Entry #10!/n"
-	"Konata Izumi & Yoshi!";
+	"Konata Izumi & /l /f!";
 
 static char s_dialogs_170_speaker_data[] = 
 	"";
@@ -1350,7 +1350,7 @@ static char s_dialogs_229_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_229_message_data[] = 
 	"Well... you know./n"
-	"You sure are bold, Yoshi-kun./n"
+	"You sure are bold, /l-kun./n"
 	"For you and Kona-chan to...";
 
 static char s_dialogs_230_speaker_data[] = 
@@ -1450,7 +1450,7 @@ static char s_dialogs_246_speaker_data[] =
 static char s_dialogs_246_message_data[] = 
 	"But, everyone is allowed/n"
 	"to have their respective interests.../n"
-	"It's okay, Yoshi-san.";
+	"It's okay, /l-san.";
 
 static char s_dialogs_247_speaker_data[] = 
 	"";
@@ -1796,7 +1796,7 @@ static char s_dialogs_305_message_data[] =
 static char s_dialogs_306_speaker_data[] = 
 	"Kagami Hiiragi";
 static char s_dialogs_306_message_data[] = 
-	"Ah, Yoshi-kun!";
+	"Ah, /l-kun!";
 
 static char s_dialogs_307_speaker_data[] = 
 	"Kagami Hiiragi";
@@ -1814,7 +1814,7 @@ static char s_dialogs_309_speaker_data[] =
 	"Kagami Hiiragi";
 static char s_dialogs_309_message_data[] = 
 	"...Oh?/n"
-	"You got separated too, Yoshi-kun?";
+	"You got separated too, /l-kun?";
 
 static char s_dialogs_310_speaker_data[] = 
 	"/l /f";
@@ -2123,7 +2123,7 @@ static char s_dialogs_362_message_data[] =
 static char s_dialogs_363_speaker_data[] = 
 	"Kagami Hiiragi";
 static char s_dialogs_363_message_data[] = 
-	"Hey, Yoshi-kun, look at this./n"
+	"Hey, /l-kun, look at this./n"
 	"What do you think?";
 
 static char s_dialogs_364_speaker_data[] = 
@@ -2407,7 +2407,7 @@ static char s_dialogs_412_speaker_data[] =
 	"Kagami Hiiragi";
 static char s_dialogs_412_message_data[] = 
 	"N-now, let's move forward./n"
-	"Or are you too scared, Yoshi-kun?";
+	"Or are you too scared, /l-kun?";
 
 static char s_dialogs_413_speaker_data[] = 
 	"/l /f";
@@ -2665,7 +2665,7 @@ static char s_dialogs_454_message_data[] =
 static char s_dialogs_455_speaker_data[] = 
 	"Kagami Hiiragi";
 static char s_dialogs_455_message_data[] = 
-	"...H-hey, Yoshi-kun.";
+	"...H-hey, /l-kun.";
 
 static char s_dialogs_456_speaker_data[] = 
 	"/l /f";
@@ -3311,7 +3311,7 @@ static char s_dialogs_568_speaker_data[] =
 	"Kagami Hiiragi";
 static char s_dialogs_568_message_data[] = 
 	"W-what are you giving that look for!?/n"
-	"Yoshi-kun--/n"
+	"/l-kun--/n"
 	"Augh! Put me down!";
 
 static char s_dialogs_569_speaker_data[] = 
@@ -3351,7 +3351,7 @@ static char s_dialogs_575_speaker_data[] =
 static char s_dialogs_575_message_data[] = 
 	"Yeah, it's rough./n"
 	"...Guess you'll have to stay like that/n"
-	"for a while, Yoshi-kun.";
+	"for a while, /l-kun.";
 
 static char s_dialogs_576_speaker_data[] = 
 	"Miyuki Takara";
@@ -3373,7 +3373,7 @@ static char s_dialogs_579_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_579_message_data[] = 
 	"You look like you're in a wedding ceremony./n"
-	"Yoshi-kun, my sister may be careless,/n"
+	"/l-kun, my sister may be careless,/n"
 	"but I wish you both the best!";
 
 static char s_dialogs_580_speaker_data[] = 
@@ -3422,7 +3422,7 @@ static char s_dialogs_587_message_data[] =
 static char s_dialogs_588_speaker_data[] = 
 	"Konata Izumi";
 static char s_dialogs_588_message_data[] = 
-	"Yoshi-kun, when you're that dense,/n"
+	"/l-kun, when you're that dense,/n"
 	"it's more than just a sin. It's a grave sin.";
 
 static char s_dialogs_589_speaker_data[] = 
@@ -3441,7 +3441,7 @@ static char s_dialogs_591_speaker_data[] =
 static char s_dialogs_591_message_data[] = 
 	"Thank you, Miyuki./n"
 	"...We'll have two soft serves./n"
-	"Yoshi-kun, you're treating me, right?";
+	"/l-kun, you're treating me, right?";
 
 static char s_dialogs_592_speaker_data[] = 
 	"/l /f";
@@ -3458,7 +3458,7 @@ static char s_dialogs_593_message_data[] =
 static char s_dialogs_594_speaker_data[] = 
 	"Kagami Hiiragi";
 static char s_dialogs_594_message_data[] = 
-	"Augh! You're so mean, Yoshi-kun!!";
+	"Augh! You're so mean, /l-kun!!";
 
 static char s_dialogs_595_speaker_data[] = 
 	"/l /f";
@@ -3653,7 +3653,7 @@ static char s_dialogs_625_message_data[] =
 static char s_dialogs_626_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_626_message_data[] = 
-	"What's going on, Yoshi-kun?/n"
+	"What's going on, /l-kun?/n"
 	"What class is running this stand?";
 
 static char s_dialogs_627_speaker_data[] = 
@@ -3798,7 +3798,7 @@ static char s_dialogs_649_message_data[] =
 static char s_dialogs_650_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_650_message_data[] = 
-	"Yoshi-kun, you're talking strange./n"
+	"/l-kun, you're talking strange./n"
 	"Also, why are you looking away from me?/n"
 	"You're being like a total NEET.";
 
@@ -3971,7 +3971,7 @@ static char s_dialogs_678_message_data[] =
 static char s_dialogs_679_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_679_message_data[] = 
-	"Yoshi-kun, calm down!/n"
+	"/l-kun, calm down!/n"
 	"If you give up, it's over!";
 
 static char s_dialogs_680_speaker_data[] = 
@@ -3993,7 +3993,7 @@ static char s_dialogs_682_message_data[] =
 static char s_dialogs_683_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_683_message_data[] = 
-	"Yoshi-kun, cooking comes from the heart!/n"
+	"/l-kun, cooking comes from the heart!/n"
 	"Kansai people create Kansai in their heart when/n"
 	"cooking, that's what Kuroi Sensei told me!";
 
@@ -4100,7 +4100,7 @@ static char s_dialogs_701_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_701_message_data[] = 
 	"Yeah!/n"
-	"Yoshi-kun, I'll probably cause problems,/n"
+	"/l-kun, I'll probably cause problems,/n"
 	"so... sorry in advance.";
 
 static char s_dialogs_702_speaker_data[] = 
@@ -4359,7 +4359,7 @@ static char s_dialogs_744_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_744_message_data[] = 
 	"Then we're all set./n"
-	"Alright, Yoshi-kun, go handle the customers.";
+	"Alright, /l-kun, go handle the customers.";
 
 static char s_dialogs_745_speaker_data[] = 
 	"";
@@ -4387,7 +4387,7 @@ static char s_dialogs_749_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_749_message_data[] = 
 	"Sorry, my hands are full right now!/n"
-	"Yoshi-kun, please take care of it!";
+	"/l-kun, please take care of it!";
 
 static char s_dialogs_750_speaker_data[] = 
 	"/l /f";
@@ -4454,7 +4454,7 @@ static char s_dialogs_760_message_data[] =
 static char s_dialogs_761_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_761_message_data[] = 
-	"Yoshi-kun, stop!/n"
+	"/l-kun, stop!/n"
 	"Don't cut through it all at once!";
 
 static char s_dialogs_762_speaker_data[] = 
@@ -4530,7 +4530,7 @@ static char s_dialogs_772_message_data[] =
 static char s_dialogs_773_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_773_message_data[] = 
-	"Woah, Yoshi-kun, that's great!/n"
+	"Woah, /l-kun, that's great!/n"
 	"You're really good at this!";
 
 static char s_dialogs_774_speaker_data[] = 
@@ -4548,7 +4548,7 @@ static char s_dialogs_776_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_776_message_data[] = 
 	"And it's always me who's being helped by you.../n"
-	"And so, Yoshi-kun...";
+	"And so, /l-kun...";
 
 static char s_dialogs_777_speaker_data[] = 
 	"/l /f";
@@ -4586,7 +4586,7 @@ static char s_dialogs_783_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_783_message_data[] = 
 	"Uwawah!?/n"
-	"Yoshi-kun, are you okay!?";
+	"/l-kun, are you okay!?";
 
 static char s_dialogs_784_speaker_data[] = 
 	"/l /f";
@@ -4656,7 +4656,7 @@ static char s_dialogs_795_speaker_data[] =
 	"Tsukasa Hiiragi";
 static char s_dialogs_795_message_data[] = 
 	"Eheheh, this was my first time tending to you,/n"
-	"Yoshi-kun, so I was a bit nervous.";
+	"/l-kun, so I was a bit nervous.";
 
 static char s_dialogs_796_speaker_data[] = 
 	"";
@@ -4830,7 +4830,7 @@ static char s_dialogs_825_message_data[] =
 static char s_dialogs_826_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_826_message_data[] = 
-	"Yoshi-kun... thank you!";
+	"/l-kun... thank you!";
 
 static char s_dialogs_827_speaker_data[] = 
 	"";
@@ -4852,7 +4852,7 @@ static char s_dialogs_829_message_data[] =
 static char s_dialogs_830_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_830_message_data[] = 
-	"Here. Have some too, Yoshi-kun.";
+	"Here. Have some too, /l-kun.";
 
 static char s_dialogs_831_speaker_data[] = 
 	"/l /f";
@@ -4916,7 +4916,7 @@ static char s_dialogs_840_message_data[] =
 static char s_dialogs_841_speaker_data[] = 
 	"???";
 static char s_dialogs_841_message_data[] = 
-	"Seriously, Yoshi-kun!?/n"
+	"Seriously, /l-kun!?/n"
 	"What are you making Tsukasa do!?";
 
 static char s_dialogs_842_speaker_data[] = 
@@ -5008,7 +5008,7 @@ static char s_dialogs_856_speaker_data[] =
 static char s_dialogs_856_message_data[] = 
 	"You can say that again./n"
 	"Despite your lack of skill, you were able to/n"
-	"successfully serve customers, Yoshi-kun.";
+	"successfully serve customers, /l-kun.";
 
 static char s_dialogs_857_speaker_data[] = 
 	"Konata Izumi";
@@ -5152,7 +5152,7 @@ static char s_dialogs_881_speaker_data[] =
 	"Kagami Hiiragi";
 static char s_dialogs_881_message_data[] = 
 	"It's okay, he'll have ours ready right away./n"
-	"Isn't that right, Yoshi-kun?";
+	"Isn't that right, /l-kun?";
 
 static char s_dialogs_882_speaker_data[] = 
 	"/l /f";
@@ -5225,7 +5225,7 @@ static char s_dialogs_893_message_data[] =
 static char s_dialogs_894_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_894_message_data[] = 
-	"Yoshi-kun, good luck!/n"
+	"/l-kun, good luck!/n"
 	"I'll help you... okay?";
 
 static char s_dialogs_895_speaker_data[] = 
@@ -5306,7 +5306,7 @@ static char s_dialogs_907_speaker_data[] =
 static char s_dialogs_907_message_data[] = 
 	"Okay then, let's see.../n"
 	"okonomiyaki would be good!/n"
-	"Could you make it for me, Yoshi-kun?";
+	"Could you make it for me, /l-kun?";
 
 static char s_dialogs_908_speaker_data[] = 
 	"/l /f";
@@ -5414,7 +5414,7 @@ static char s_dialogs_925_message_data[] =
 static char s_dialogs_926_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_926_message_data[] = 
-	"And you of course, Yoshi-kun!";
+	"And you of course, /l-kun!";
 
 static char s_dialogs_927_speaker_data[] = 
 	"/l /f";
@@ -5527,7 +5527,7 @@ static char s_dialogs_944_message_data[] =
 static char s_dialogs_945_speaker_data[] = 
 	"Miyuki Takara";
 static char s_dialogs_945_message_data[] = 
-	"Yoshi-san!?/n"
+	"/l-san!?/n"
 	"Where have you been?";
 
 static char s_dialogs_946_speaker_data[] = 
@@ -5728,7 +5728,7 @@ static char s_dialogs_979_message_data[] =
 static char s_dialogs_980_speaker_data[] = 
 	"Miyuki Takara";
 static char s_dialogs_980_message_data[] = 
-	"You're speaking too highly of me, Yoshi-san.";
+	"You're speaking too highly of me, /l-san.";
 
 static char s_dialogs_981_speaker_data[] = 
 	"/l /f";
@@ -5831,7 +5831,7 @@ static char s_dialogs_998_speaker_data[] =
 	"Miyuki Takara";
 static char s_dialogs_998_message_data[] = 
 	"Therefore, I have one request for you,/n"
-	"Yoshi-san...";
+	"/l-san...";
 
 static char s_dialogs_999_speaker_data[] = 
 	"/l /f";
@@ -5996,7 +5996,7 @@ static char s_dialogs_1025_speaker_data[] =
 	"Miyuki Takara";
 static char s_dialogs_1025_message_data[] = 
 	"Ah!? Y-you're right!/n"
-	"Yoshi-san, let's hurry!";
+	"/l-san, let's hurry!";
 
 static char s_dialogs_1026_speaker_data[] = 
 	"";
@@ -6132,7 +6132,7 @@ static char s_dialogs_1047_message_data[] =
 static char s_dialogs_1048_speaker_data[] = 
 	"Miyuki Takara";
 static char s_dialogs_1048_message_data[] = 
-	"Especially from you, Yoshi-san.";
+	"Especially from you, /l-san.";
 
 static char s_dialogs_1049_speaker_data[] = 
 	"/l /f";
@@ -6738,7 +6738,7 @@ static char s_dialogs_1151_speaker_data[] =
 	"Miyuki Takara";
 static char s_dialogs_1151_message_data[] = 
 	"I understand./n"
-	"Thank you, Yoshi-san.";
+	"Thank you, /l-san.";
 
 static char s_dialogs_1152_speaker_data[] = 
 	"";
@@ -6790,7 +6790,7 @@ static char s_dialogs_1159_message_data[] =
 static char s_dialogs_1160_speaker_data[] = 
 	"Miyuki Takara";
 static char s_dialogs_1160_message_data[] = 
-	"Yoshi-san, is something the matter?";
+	"/l-san, is something the matter?";
 
 static char s_dialogs_1161_speaker_data[] = 
 	"/l /f";
@@ -6915,7 +6915,7 @@ static char s_dialogs_1182_message_data[] =
 static char s_dialogs_1183_speaker_data[] = 
 	"Tsukasa Hiiragi";
 static char s_dialogs_1183_message_data[] = 
-	"Yoshi-kun, your face is red./n"
+	"/l-kun, your face is red./n"
 	"What's wrong? Do you have a fever?";
 
 static char s_dialogs_1184_speaker_data[] = 
