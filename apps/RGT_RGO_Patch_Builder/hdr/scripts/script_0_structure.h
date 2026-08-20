@@ -624403,6 +624403,31 @@ static rgt_rgo_script_element s_script_0_elements_data[] =
 		{
 			.dialog =
 			{
+				.speaker = s_dialogs_new_10_speaker_data,
+				.message = s_dialogs_new_10_message_data
+			}
+		}
+	},
+	{
+		.type = RGT_RGO_SCRIPT_COMMAND_SECTION,
+		.content =
+		{
+			.command_section =
+			{
+				.commands =
+				{
+					.elems = s_commands_new_10_0_data,
+					.length = RGT_C_ARRAY_SIZE(s_commands_new_10_0_data)
+				}
+			}
+		}
+	},
+	{
+		.type = RGT_RGO_SCRIPT_DIALOG,
+		.content =
+		{
+			.dialog =
+			{
 				.speaker = s_dialogs_23818_speaker_data,
 				.message = s_dialogs_23818_message_data
 			}
@@ -685970,6 +685995,7 @@ static rgt_rgo_script_element s_script_0_elements_data[] =
 			}
 		}
 	},
+#if 0
 	{
 		.type = RGT_RGO_SCRIPT_CHOICE,
 		.content =
@@ -685994,6 +686020,7 @@ static rgt_rgo_script_element s_script_0_elements_data[] =
 			}
 		}
 	},
+#endif
 	{
 		.type = RGT_RGO_SCRIPT_CHOICE,
 		.content =
@@ -686242,7 +686269,6 @@ static rgt_rgo_script_element s_script_0_elements_data[] =
 			}
 		}
 	},
-#if 0
 	{
 		.type = RGT_RGO_SCRIPT_CHOICE,
 		.content =
@@ -686267,7 +686293,6 @@ static rgt_rgo_script_element s_script_0_elements_data[] =
 			}
 		}
 	},
-#endif
 	{
 		.type = RGT_RGO_SCRIPT_CHOICE,
 		.content =
