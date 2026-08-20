@@ -7,13 +7,14 @@
 #include <assert.h>
 
 #define RGT_ASSERT(condition, error) \
-do                                   \
-{                                    \
-    if (!(condition))                \
-    {                                \
-        result = error;              \
-        goto finish;                 \
-    }                                \
+do \
+{ \
+    if (!(condition)) \
+    { \
+        fprintf(stderr, "RGT ERROR: %s (%s:%d)\n", #error, __FILE__, __LINE__); \
+        result = error; \
+        goto finish; \
+    } \
 } while(0)
 
 #define RGT_THROW(error) \
