@@ -49,10 +49,11 @@ rgt_load_png(rgt_arena *arena, const char *path, rgt_image *create)
 		png_ptr, info_ptr, &image.width, &image.height, 
 		&bit_depth, &color_type, NULL, NULL, NULL
 	);
-	if (color_type == PNG_COLOR_TYPE_PALETTE) 
-	{
-		png_set_palette_to_rgb(png_ptr);
-	}
+	if (color_type == PNG_COLOR_TYPE_PALETTE)
+    {
+    png_set_palette_to_rgb(png_ptr);
+    png_set_add_alpha(png_ptr, 0xFF, PNG_FILLER_AFTER);
+    }
 	if (color_type == PNG_COLOR_TYPE_GRAY && bit_depth < 8) 
 	{
 		png_set_expand_gray_1_2_4_to_8(png_ptr);
